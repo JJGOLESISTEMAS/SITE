@@ -25,6 +25,8 @@
     <link href="assets/css/owl.transitions.css" rel="stylesheet">
     <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -34,6 +36,38 @@
 </head>
 
 <body>
+<!-- Botón flotante para abrir la ventana emergente -->
+<a href="javascript:void(0);" class="whatsapp-button" onclick="openModal()">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<!-- Fondo oscuro para la ventana flotante -->
+<div id="overlay" onclick="closeModal()"></div>
+
+<!-- Ventana flotante de selección de WhatsApp -->
+<div id="whatsapp-modal">
+    <div class="whatsapp-modal-header">Iniciar Conversación</div>
+    <div class="whatsapp-modal-message">
+        ¡Hola! Haga clic en uno de nuestros miembros a continuación para chatear en WhatsApp.
+    </div>
+    
+    <!-- Botón para Contacto 1 -->
+    <button onclick="window.location.href='https://api.whatsapp.com/send?phone=527731150326&text=¡Hola!Me%20Gustaria%20Iniciar%20conversación%20y%20recibir%20Información'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Contacto 1">
+        Contacto 1
+    </button>
+
+    <!-- Botón para Contacto 2 -->
+    <button onclick="window.location.href='https://api.whatsapp.com/send?phone=529991234567&text=¡Hola!Me%20Gustaria%20Iniciar%20conversación%20y%20recibir%20Información'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Contacto 2">
+        Contacto 2
+    </button>
+
+    <!-- Botón para cerrar la ventana flotante -->
+    <button onclick="closeModal()">Cerrar</button>
+</div>
+
+
 
     <!-- start page-wrapper -->
     <div class="page-wrapper">
@@ -663,7 +697,7 @@
             </div>
         </section>
         <!-- end quote-section-s2 -->
-         
+
         <!-- start site-footer -->
         <footer class="site-footer">
             <div class="upper-footer">
@@ -852,6 +886,20 @@ var form1 = document.getElementById('form1');
     }
     document.getElementById("my-form-status1").style.display = "";
     form1.addEventListener("submit", handleSubmit)
+</script>
+
+<script>
+    // Función para abrir la ventana flotante
+    function openModal() {
+        document.getElementById('whatsapp-modal').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+    }
+
+    // Función para cerrar la ventana flotante
+    function closeModal() {
+        document.getElementById('whatsapp-modal').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+    }
 </script>
 
     
