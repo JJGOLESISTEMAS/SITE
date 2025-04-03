@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <!-- dustech/index-3.html  13 Nov 2019 12:55:20 GMT -->
 
@@ -10,7 +10,7 @@
     <meta name="author" content="irstheme">
 
     <title> JJ GOLE S.A. DE C.V. | Inicio </title>
-    <link rel="icon" type="image/ico" href="https://github.com/JJGOLESISTEMAS/SITE/blob/main/img/Logotipo01FB.ico">
+    <link rel="icon" href="img/Logotipo01FB.ico">
 
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/flaticon.css" rel="stylesheet">
@@ -143,8 +143,9 @@
                                     </li>
                                 </ul>-->
                             </li>
-                            <!--<li><a href="Bolsa_trabajo.html">Bolsa de Trabajo</a></li>-->
-                            <li><a href="contact.html">Contacto</a></li>
+                            <!--<li><a href="Bolsa_trabajo.html">Bolsa de Trabajo</a></li>
+                            <li><a href="contact.html">Contacto</a></li>-->
+                            <li><a href="exampleC.html">Contacto</a></li>
                             <li><a href="dowloads.html">Descargable</a></li>
                             <li><a href="line-D.html">Linea de Denuncia</a></li>
                         </ul>
@@ -541,7 +542,6 @@
  <section class="partners-section">
     <!-- <h2 class="hidden">Certificados</h2>-->
     <div class="section-title-s5">
-        <h2></h2>
     </div> <!-- end container -->
 </section>
 <!-- end partners-section -->
@@ -591,7 +591,6 @@
  <section class="partners-section">
     <!-- <h2 class="hidden">Certificados</h2>-->
     <div class="section-title-s5">
-        <h2></h2>
     </div> <!-- end container -->
 </section>
 <!-- end partners-section -->
@@ -642,14 +641,14 @@
 
 
 
- <!-- start partners-section -->
+ <!-- start partners-section 
  <section class="partners-section">
-    <!-- <h2 class="hidden">Certificados</h2>-->
+    <h2 class="hidden">Certificados</h2>
     <div class="section-title-s5">
         <h2></h2>
-    </div> <!-- end container -->
+    </div> end container 
 </section>
-<!-- end partners-section -->
+end partners-section -->
 
 
 
@@ -975,7 +974,6 @@
         <section class="quote-section quote-section-s2">
             <div class="content-area clearfix">
                 <div class="left-col">
-                    <h2></h2>
                     <div class="details">
                         <p>
                             <br>
@@ -1010,46 +1008,46 @@
                     <div class="quote-area">
                         <h3>Contactanos, Solcita Información</h3>
                         <p>Ingresa los siguientes datos para ponernos en Contacto</p>
-                        <form action="https://formsubmit.io/send/sistemas2.jjgole@gmail.com" method="POST" class="contact-validation-active" id="contact-quote-form">
+                        <!--<form action="https://formspree.io/f/xldjpjod" method="POST" class="contact-validation-active" id="contact-quote-form">-->
+                        <form id="form" action="https://formspree.io/f/xldjpjod" method="POST" >
                             <div>
                                 <input type="text" class="form-control" name="name" id="name"
-                                    placeholder="Nombre Completo*">
+                                    placeholder="Nombre Completo *">
                             </div>
                             <div>
                                 <input type="email" class="form-control" name="email" id="email"
                                     placeholder="Correo Electronico *">
                             </div>
                             <div>
-                                <input type="text" class="form-control" name="phone" id="phone"
-                                    placeholder="Numero de Telefono*">
+                                <input type="tel" class="form-control" name="telephone" id="telephone"
+                                    placeholder="Numero de Telefono *">
                             </div>
+
                             <div>
                                 <textarea class="form-control" name="note" id="note"
                                     placeholder="Descripcion"></textarea>
                             </div>
-                            <input class="theme-btn" type="submit" value="Enviar">
-                            <!--<div class="submit-area">
+                           
+                            <br>
+                            <button type="submit" class="theme-btn">Enviar</button>
+                            <p style="color: #d46e0e; font-size: 12px; font-weight: bold;" id="my-form-status"></p>
+                            <!--<input class="theme-btn" type="submit" value="Enviar">
+                            <div class="submit-area">
                                 <button type="submit" class="theme-btn">Enviar Información</button>
                                 <div id="loader">
                                     <i class="ti-reload"></i>
                                 </div>
-                            </div>-->
+                            </div>
                             <div class="clearfix error-handling-messages">
                                 <div id="success">Muchas Gracias</div>
                                 <div id="error"> Ocurrió un error al enviar el correo electrónico. Por favor, inténtelo
-                                    de nuevo más tarde. </div>
+                                    de nuevo más tarde. </div>-->
+
                             </div>
                         </form>
                     </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
                 </div>
             </div>
-            <br>
-            <br>
-            <br>
         </section>
         <!-- end quote-section-s2 -->
 
@@ -1219,17 +1217,16 @@
                                     <h3>Boletin Informativo</h3>
                                 </div>
                                 <p>Se le notificará cuando aparezca algo nuevo.</p>
-                                <form action="https://formsubmit.io/send/sistemas2.jjgole@gmail.com" method="POST">
-                                    <div class="input-1">
-                                        <input type="email" class="form-control" placeholder="Correo Electronico * "
-                                            required>
+                                <form id="form1" action="https://formspree.io/f/xldjpjod" method="POST">
+                                    <div >
+                                        <input type="email" class="form-control" name="email" placeholder="Correo Electronico * "required>
                                     </div>
                                     <div class="submit clearfix">
-                                        <button type="submit"><i class="ti-email"></i></button>
+                                        <button type="submit" class="theme-btn"><i class="ti-email"></i></button>
                                     </div>
+                                    <p style="color: #d46e0e; font-size: 12px; font-weight: bold;" id="my-form-status1"></p>
                                 </form>
                             </div>
-                        </div>
                     </div>
                 </div> <!-- end container -->
             </div>
@@ -1273,13 +1270,84 @@
     ================================================== -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+
+        var form = document.getElementById('form')
+        async function handleSubmit(event) {
+            event.preventDefault()
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response =>{
+                if (response.ok) {
+                status.innerHTML = "¡Gracias por comunicarte con nosotros! Hemos recibido tu mensaje y nuestro equipo se pondrá en contacto contigo.";
+                form.reset()
+            } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                        status.innerHTML = "Ocurrió un error al enviar el correo electrónico. Por favor, inténtelo de nuevo más tarde."
+                    }
+                })
+            }
+            }).catch(error => {
+                status.innerHTML = "Ocurrió un error al enviar el correo electrónico. Por favor, inténtelo de nuevo más tarde."
+            });
+        }
+        document.getElementById("my-form-status").style.display = "";
+        form.addEventListener("submit", handleSubmit)
+    </script>
 
 
+<script>
+
+    var form1 = document.getElementById('form1');
+
+    async function handleSubmit(event) {
+        event.preventDefault()
+
+        var status1 = document.getElementById("my-form-status1");
+        var data1 = new FormData(event.target);
+
+        fetch(event.target.action, {
+            method: form1.method,
+            body: data1,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response =>{
+            if (response.ok) {
+            status1.innerHTML = "¡Gracias por comunicarte con nosotros!";
+            form1.reset()
+        } else {
+            response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                    status1.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                    status1.innerHTML = "Ocurrió un error al enviar el correo electrónico. Por favor, inténtelo de nuevo más tarde."
+                }
+            })
+        }
+        }).catch(error => {
+            status1.innerHTML = "Ocurrió un error al enviar el correo electrónico. Por favor, inténtelo de nuevo más tarde."
+        });
+    }
+    document.getElementById("my-form-status1").style.display = "";
+    form1.addEventListener("submit", handleSubmit)
+</script>
     <!-- Plugins for this template -->
     <script src="assets/js/jquery-plugin-collection.js"></script>
 
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
+    
 </body>
 
 <!-- dustech/index-3.html  13 Nov 2019 12:55:21 GMT -->
