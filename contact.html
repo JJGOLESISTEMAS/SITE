@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="irstheme">
 
-    <title> JJ GOLE S.A. DE C.V. | Contacto</title>
+    <title>JJ GOLE S.A. DE C.V. | Contacto</title>
     <link rel="icon" href="img/Logotipo01FB.ico">
-
+    
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/flaticon.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +24,8 @@
     <link href="assets/css/owl.transitions.css" rel="stylesheet">
     <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+        <link href="estilos.css" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -58,7 +60,7 @@
         <!-- Start header -->
         <header id="header" class="site-header header-style-1">
             <nav class="navigation navbar navbar-default">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="open-btn">
                             <span class="sr-only">Toggle navigation</span>
@@ -162,10 +164,12 @@
                             </div>
                         </div>-->
                     </div>
+                   
                 </div><!-- end of container -->
             </nav>
         </header>
         <!-- end of header -->
+
 
         <!-- start page-title -->
         <section class="page-title">
@@ -183,234 +187,247 @@
         <!-- start contact-pg-section -->
         <section class="contact-pg-section section-padding">
             <div class="container">
-              <div class="arrow">
-                    <div class="col col-md-6 col-sm-8 col-lg-6">
-                        <div class="section-title">
-                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdAUa8hxwumCrAAb50kBedjODhil_XP6PS_anC7mexhEDngbQ/viewform?embedded=true" width="540" marginwidth="0" height="740" marginheight="0" frameborder="0">Cargando…</iframe>
-                        </div>
-                    </div>
-				     <div class="col col-lg-5 col-md-6 col-sm-8">
-                       <div class="details">
-							<h3><b>Oficina Cadereyta, Nuevo Léon</b></h3>
-                               <ul>
-                                   <li type="text" class="ti-location-pin"> <strong> Cadereyta, Nuevo León <br>
-                                   </strong> <strong> Calle: Zaragoza No. 608-A PTE, Colonia: Zona Centro, C.P.: 67480, Cadereyta Jimenez, Nuevo León. </strong></li>
-                                   <li class="ti-mobile"><span> <strong> Telefono:</strong></span> 828-284-32-00</li>
-                                   <li class="ti-email"><span> <strong> Email:</strong></span> Cadereyta@jjgole.com</li>
-                                   <li class="ti-alarm-clock"><span> <strong> Horario:</strong></span> <br> 
-                                     <strong> Lunes - Viernes 08:00 A.M.- 06:00 P.M. <br>
-                                   </strong><strong>Sábado 08:00 A.M. - 1:00 P.M.</strong></li>
-                               </ul>
-                           </div>
-                       <div>
-                         <h3><b>Taller Atitalaquia, Hidalgo</b></h3>
-                           <ul>
-                               <li class="ti-location-pin"> <strong> Atitalaquia, Hidalgo <br>
-                               </strong> <strong> Calle: Primera Cerrada de Camino Real a Bojay, S/N. , Colonia: La Loma, C.P.: 42970, Atitalaquia, Hidalgo.</strong></li>
-                               <li class="ti-mobile"><span> <strong> Telefono:</strong></span> 778-738-02-27</li>
-                               <li class="ti-email"><span> <strong> Email:</strong></span> inspeccion@jjgole.com</li>
-                               <li class="ti-alarm-clock"><span> <strong> Horario:</strong></span> <br> 
-                                 <strong> Lunes - Viernes 08:00 A.M.- 06:00 P.M. <br>
-                               </strong><strong>Sábado 08:00 A.M. - 1:00 P.M.</strong></li>
-                         </ul>
-                         </div>
-                           <!-- <div>
-                                <h3>London Office</h3>
-                                <ul>
-                                    <li><i class="ti-location-pin"></i> 21/4 Jogon street utral, utiley, Austria</li>
-                                    <li><i class="ti-mobile"></i> 546418563, 3245647</li>
-                                    <li><i class="ti-email"></i> example@demo.com</li>
-                                </ul>
-                            </div>-->
-                        </div>
+                <div class="row">
+                    <div class="col col-lg-5 col-md-6 col-sm-8">
+                        <div class="section-title" style="text-align: left;">
+                            <h2>Contactanos, Solcita Información</h2>
+                            <span>Ingresa los siguientes datos para ponernos en Contacto</span>
 
                         </div>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-7">
+                        <form  id="form" action="https://formspree.io/f/xldjpjod" method="POST" class="contact-validation-active" id="contact-form-main">
+                            <div>
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Nombre Completo">
+                            </div>
+                            <div>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Correo Electronico*">
+                            </div>
+                            <div>
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Numero de Telefono*">
+                            </div>
+                            
+                            <div class="fullwidth">
+                                <textarea class="form-control" name="note"  id="note" placeholder="Descripción"></textarea>
+                            </div>
+                            <div class="submit-area" style="text-align: left;"> 
+                                <button type="submit" class="theme-btn">Enviar</button>
+                                <p style="color: #d46e0e; font-size: 12px; font-weight: bold;" id="my-form-status"></p>
+
+                                <div id="loader">
+                                    <i class="ti-reload"></i>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>  
+
+                    <div class="col col-md-5">
+                        <div class="office-info"style="text-align: left;">
+                            <div>
+                                <h3><b>Oficina Cadereyta, Nuevo Léon</b></h3>
+                                <ul>
+                                    <li><i class="ti-location-pin"></i> <strong> Cadereyta, Nuevo León <br>
+                                    </strong> <strong> Calle:</strong> Zaragoza No. 608-A PTE, <strong>Colonia:</strong> Zona Centro,<strong> C.P.: </strong> 67480, Cadereyta Jimenez, Nuevo León.</li>
+                                    <li><i class="ti-mobile"></i> <span> <strong> Telefono:</strong></span> 828-284-32-00</li>
+                                    <li><i class="ti-email"></i> <strong> Email:</strong></span> Cadereyta@jjgole.com</li>
+                                    <li><i class="ti-alarm-clock"></i> <strong> Horario:</strong></span>
+                                        <strong> <br>Lunes - Viernes 08:00 A.M.- 06:00 P.M. <br>
+                                      </strong><strong>Sábado 08:00 A.M. - 1:00 P.M.</strong></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3><b>Talleres Atitalaquia, Hidalgo</b></h3>
+                                <ul>
+                                    <li><i class="ti-location-pin"></i><strong> Atitalaquia, Hidalgo <br>
+                                    </strong> <strong> Calle: </strong>Primera Cerrada de Camino Real a Bojay, S/N. ,<strong>Colonia: </strong> La Loma, <strong>C.P.:</strong> 42970, Atitalaquia, Hidalgo.</strong></li>
+                                    <li><i class="ti-mobile"></i> <span> <strong> Telefono:</strong></span> 778-738-02-27</li>
+                                    <li><i class="ti-email"></i> <strong> Email:</strong></span> inspeccion@jjgole.com</li>
+                                    <li><i class="ti-alarm-clock"></i> <strong> Horario:</strong></span>
+                                        <strong> <br>Lunes - Viernes 08:00 A.M.- 06:00 P.M. <br>
+                                      </strong><strong>Sábado 08:00 A.M. - 1:00 P.M.</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                  
                 </div>
             </div> <!-- end container -->
         </section>
-		
-		
-		
-		
-		
         <!-- end contact-pg-section -->
+
 
         <!--  start contact-map -->
         <section class="contact-map-section">
-            <!--<h2 class="text-hide">Mapa de Contacto</h2>-->
-            <div class="col col-lg-5 col-md-6 col-sm-8">
-                <div class="section-title">
-                    <h2>Mapa de Ubicación</h2>
-                </div>
-            </div>
+            <h2 class="hidden">Mapa de Ubicación</h2>
             <div class="contact-map">
-                <!--<iframe src="https://www.google.com/maps/embed/v1/place?q=JJ+GOLE+S.A.+de+C.V.,+Zaragoza,+Ignacio+Allende+Proyecto,+Cadereyta+Jiménez,+N.L.,+México&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" allowfullscreen></iframe>-->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14991.902001441818!2d-99.2674822!3d20.051468899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d22b14f8474d8b%3A0xa79f0b82d41bc8fe!2sJJ%20GOLE%20TULA!5e0!3m2!1ses-419!2smx!4v1694792555934!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
             </div>
         </section>
         <!-- end contact-map -->
-
-
-        <!-- start cta-section 
+         
+        <!-- start cta-section -->
         <section class="cta-section">
             <div class="container">
                 <div class="row">
                     <div class="col col-lg-6 col-md-6">
                         <div class="cta-text">
-                            <br>
-                            <br>
-                            <h3>¡Mantengámonos en contacto!</h3>
-                            <p></p>
+                            <!--<h3>Lets Get in Touch!</h3>
+                            <p>Raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.</p>-->
                         </div>
                     </div>
                     <div class="col col-lg-5 col-lg-offset-1 col-md-6">
                         <div class="contact-info">
                             <div>
-                                <i class="fi flaticon-call"></i>
-                                <h4>Telefono</h4>
-                                <p>+52 828-284-32-00
-                                 <br>+52 778-738-02-27
-                                </p>
+                                <!--<i class="fi flaticon-call"></i>
+                                <h4>Call us</h4>
+                                <p>+654894754</p>-->
                             </div>
                             <div>
-                                <i class="fi flaticon-contact"></i>
-                                <h4>Email</h4>
-                                <p>Cadereyta@jjgole.com</p>
+                                <!--<i class="fi flaticon-contact"></i>
+                                <h4>Email us</h4>
+                                <p>demo@example.com</p>-->
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>end container 
-        </section>end cta-section -->
+            </div> <!-- end container -->
+        </section>
+        <!-- end cta-section -->
 
 
         <!-- start site-footer -->
-        <footer class="site-footer">
-            <div class="upper-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col col-lg-3 col-md-3 col-sm-6">
-                            <div class="widget about-widget">
-                                <div class="logo widget-title">
-                                    <img src="img/logotipoHP.png" alt>
-                                </div>
-                                <p></p>
-                                <div class="social-icons">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com/profile.php?id=100090913023225"><i
-                                                    class="ti-facebook"></i></a></li>
-                                        <li><a href="https://twitter.com/?lang=es"><i class="ti-twitter-alt"></i></a>
-                                        </li>
-                                        <li><a href="https://mx.linkedin.com/"><i class="ti-linkedin"></i></a></li>
-                                        <!--  <li><a href="#"><i class="ti-pinterest"></i></a></li>
-                                        <li><a href="#"><i class="ti-vimeo-alt"></i></a></li>-->
-                                    </ul>
-                                </div>
-                            </div>
+<footer class="site-footer">
+    <div class="upper-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-3 col-md-3 col-sm-6">
+                    <div class="widget about-widget" style="text-align: left;">
+                        <div class="logo widget-title">
+                            <img src="img/logotipoHP.png" alt>
                         </div>
-                        <!-- <div class="col col-lg-3 col-md-3 col-sm-6">
-                            <div class="widget link-widget">
-                                <div class="widget-title">
-                                    <h3>Usefull Links</h3>
-                                </div>
-                                <ul>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Our services</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">Meet team</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="#">Provacu Policy</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">FAQ</a></li>
-                                </ul>
-                            </div>
-                        </div>-->
-                        <div class="col col-lg-3 col-md-3 col-sm-6">
-                            <div class="widget contact-widget service-link-widget">
-                                <div class="widget-title">
-                                    <h3>Dirección Oficinas</h3>
-                                </div>
-                                <ul>
-                                    <li><b>Cadereyta, Nuevo León</b></li>
-                                    <li> Calle: Zaragoza No. 608-A PTE, Colonia: Zona Centro, C.P.: 67480, Cadereyta
-                                        Jimenez, Nuevo León.
-                                    </li>
-                                    <li><span>Télefono:</span> 828-284-32-00</li>
-                                    <li><span>Email:</span> Cadereyta@jjgole.com</li>
-                                    <li><span>Horario:</span> Lunes - Viernes <br>08:00 AM - 06:00 PM <br>Sábado 08:00 AM - 01:00 PM</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 col-md-3 col-sm-6">
-                            <div class="widget contact-widget service-link-widget">
-                                <div class="widget-title">
-                                    <h3>Dirección Taller</h3>
-                                </div>
-                                <ul>
-                                    <li><b>Atitalaquia, Hidalgo</b></li>
-                                    <li>Calle: Primera Cerrada de Camino Real a Bojay, S/N. , Colonia: La Loma, C.P.:
-                                        42970, Atitalaquia, Hidalgo.</li>
-                                    <li><span>Télefono:</span> 778-738-02-27</li>
-                                    <li><span>Email:</span>inspeccion@jjgole.com</li>
-                                    <li><span>Horario:</span> Lunes - Viernes <br>08:00 AM - 06:00 PM <br>Sábado 08:00 AM - 01:00 PM</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 col-md-3 col-sm-6">
-                            <div class="widget newsletter-widget">
-                                <div class="widget-title">
-                                    <h3>Boletin Informativo</h3>
-                                </div>
-                                <p>Se le notificará cuando aparezca algo nuevo.</p>
-                                <form action="https://formsubmit.io/send/sistemas2.jjgole@gmail.com" method="POST">
-                                    <div class="input-1">
-                                        <input type="email" class="form-control" placeholder="Correo Electronico * "
-                                            required>
-                                    </div>
-                                    <div class="submit clearfix">
-                                        <button aria-label="Name" type="submit"><i class="ti-email"></i></button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- end container -->
-            </div>
+                        <p></p>
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="https://www.facebook.com/profile.php?id=100090913023225"><i
+                                    class="ti-facebook"></i></a></li>
 
-            <div class="lower-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="separator"></div>
-                        <div class="col col-xs-12 col-md-10">
-                            <!--<p class="copyright"><a href="templateshub.net">Templates Hub</a></p>-->
-                            <div class="extra-link center-block">
-                                <ul><li>| JJ GOLE S.A. de C.V. - Copyright &copy; - 2023 |</li>
-                                   <li><a href="aviso_priv.html">|Aviso de Privacidad|</a></li>
-                                   <li>|Derechos reservados, JJ GOLE S.A. de C.V.|</li>
-                                    <!-- <li><a href="#">Privace & Policy</a></li>
-                                    <li><a href="#">Terms</a></li>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">FAQ</a></li>-->
-                                </ul>
-
-                            </div>
-
+                        <li><a href="https://mx.linkedin.com/"><i class="ti-linkedin"></i></a></li>
+                        <!--  <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                          <li><a href="https://twitter.com/?lang=es"><i class="ti-twitter-alt"></i></a></li>
+                        <li><a href="#"><i class="ti-vimeo-alt"></i></a></li>-->
+                            </ul>
                         </div>
                     </div>
                 </div>
+
+                <div class="col col-lg-3 col-md-3 col-sm-6" style="text-align: left;">
+                    <div class="widget contact-widget service-link-widget">
+                        <div class="widget-title"  style="text-align: left;">
+                            <h3>Dirección Oficinas</h3>
+                        </div>
+                        <ul>
+                            <li><b>Cadereyta, Nuevo León</b></li>
+                            <li> Calle: Zaragoza No. 608-A PTE, Colonia: Zona Centro, C.P.: 67480, Cadereyta
+                                Jimenez, Nuevo León.
+                            </li>
+                            <li><span>Télefono:</span> 828-284-32-00</li>
+                            <li><span>Email:</span> Cadereyta@jjgole.com</li>
+                            <li><span>Horario:</span> Lunes - Viernes <br>08:00 AM - 06:00 PM <br>Sábado 08:00 AM - 01:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col col-lg-3 col-md-3 col-sm-6">
+                    <div class="widget contact-widget service-link-widget" style="text-align: left;">
+                        <div class="widget-title">
+                            <h3>Direccion de Talleres</h3>
+                        </div>
+                        <ul>
+                            <li><b>Atitalaquia, Hidalgo</b></li>
+                                    <li>Calle: Primera Cerrada de Camino Real a Bojay, S/N. , Colonia: La Loma, C.P.:
+                                        42970, Atitalaquia, Hidalgo.</li>
+                                    <li><span>Télefono:</span> 778-738-02-27</li>
+                                    <li><span>Email:</span> inspeccion@jjgole.com</li>
+                                    <li><span>Horario:</span> Lunes - Viernes <br>08:00 AM - 06:00 PM <br>Sábado 08:00 AM - 01:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col col-lg-3 col-md-3 col-sm-6">
+                    <div class="widget newsletter-widget" style="text-align: left;">
+                        <div class="widget-title">
+                            <h3>Boletin Informativo</h3>
+                        </div>
+                        <p>Se le notificará cuando aparezca algo nuevo..</p>
+                        <form id="form1" action="https://formspree.io/f/xldjpjod" method="POST">
+                            <div >
+                                <input type="email" class="form-control" name="email" placeholder="Correo Electronico * "required>
+                            </div>
+                            <div class="submit clearfix">
+                                <button type="submit" class="theme-btn"><i class="ti-email"></i></button>
+                            </div>
+                            <p style="color: #d46e0e; font-size: 12px; font-weight: bold;" id="my-form-status1"></p>
+                        </form>
+                    </div>
+                </div>
             </div>
-            
+        </div> <!-- end container -->
+    </div>
 
-        </footer>
+    <div class="lower-footer">
+        <div class="container">
+            <div class="row">
+                <div class="separator"></div>
+                <div class="col col-xs-12" style="text-align: right;">
+                    <p class="copyright"><a href="templateshub.net">Templates Hub</a></p>
+                    <div class="extra-link">
+                        <ul><li>| JJ GOLE S.A. de C.V. - Copyright &copy; - 2025 |</li>
+                            <li><a href="aviso_priv.html">|Aviso de Privacidad|</a></li>
+                            <li>|Derechos reservados, JJ GOLE S.A. de C.V.|</li>
+                             <!-- <li><a href="#">Privace & Policy</a></li>
+                             <li><a href="#">Terms</a></li>
+                             <li><a href="#">About us</a></li>
+                             <li><a href="#">FAQ</a></li>-->
+                         </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
         <!-- end site-footer -->
-
     </div>
     <!-- end of page-wrapper -->
+<!-- Botón flotante para abrir la ventana emergente -->
+<a href="javascript:void(0);" class="whatsapp-button" onclick="openModal()">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+<!-- Fondo oscuro para la ventana flotante -->
+<div id="overlay" onclick="closeModal()"></div>
 
+<!-- Ventana flotante de selección de WhatsApp -->
+<div id="whatsapp-modal" style="text-align: left;">
+    <div class="whatsapp-modal-header">Iniciar Conversación</div>
+    <div class="whatsapp-modal-message">
+        ¡Hola! Haga clic en uno de nuestros miembros a continuación para chatear en WhatsApp.
+    </div>
+    
+    <!-- Botón para Contacto 1 -->
+    <button  onclick="window.location.href='https://api.whatsapp.com/send?phone=527731150326&text=¡Hola!Me%20Gustaria%20Iniciar%20conversación%20y%20recibir%20Información'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Contacto 1">
+       Recursos Humanos
+    </button>
 
+    <!-- Botón para Contacto 2 
+    <button onclick="window.location.href='https://api.whatsapp.com/send?phone=529991234567&text=¡Hola!Me%20Gustaria%20Iniciar%20conversación%20y%20recibir%20Información'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Contacto 2">
+        Contacto 2
+    </button>-->
+
+    <!-- Botón para cerrar la ventana flotante -->
+    <button onclick="closeModal()">Cerrar</button>
+</div>
 
     <!-- All JavaScript files
     ================================================== -->
@@ -422,6 +439,89 @@
 
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
+
+    <script>
+        var form = document.getElementById('form')
+            async function handleSubmit(event) {
+                event.preventDefault()
+                var status = document.getElementById("my-form-status");
+                var data = new FormData(event.target);
+    
+                fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response =>{
+                    if (response.ok) {
+                    status.innerHTML = "¡Gracias por comunicarte con nosotros! Hemos recibido tu mensaje y nuestro equipo se pondrá en contacto contigo.";
+                    form.reset()
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.innerHTML = "Ocurrió un error al enviar el correo electrónico. Por favor, inténtelo de nuevo más tarde."
+                        }
+                    })
+                }
+                }).catch(error => {
+                    status.innerHTML = "Ocurrió un error al enviar el correo electrónico. Por favor, inténtelo de nuevo más tarde."
+                });
+            }
+            document.getElementById("my-form-status").style.display = "";
+            form.addEventListener("submit", handleSubmit)
+    </script>
+    
+    <script>
+    var form1 = document.getElementById('form1');
+        async function handleSubmit(event) {
+            event.preventDefault()
+    
+            var status1 = document.getElementById("my-form-status1");
+            var data1 = new FormData(event.target);
+    
+            fetch(event.target.action, {
+                method: form1.method,
+                body: data1,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response =>{
+                if (response.ok) {
+                status1.innerHTML = "¡Gracias por comunicarte con nosotros!";
+                form1.reset()
+            } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        status1.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                        status1.innerHTML = "Ocurrió un error al enviar el correo electrónico. Por favor, inténtelo de nuevo más tarde."
+                    }
+                })
+            }
+            }).catch(error => {
+                status1.innerHTML = "Ocurrió un error al enviar el correo electrónico. Por favor, inténtelo de nuevo más tarde."
+            });
+        }
+        document.getElementById("my-form-status1").style.display = "";
+        form1.addEventListener("submit", handleSubmit)
+    </script>
+    
+    <script>
+        // Función para abrir la ventana flotante
+        function openModal() {
+            document.getElementById('whatsapp-modal').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+    
+        // Función para cerrar la ventana flotante
+        function closeModal() {
+            document.getElementById('whatsapp-modal').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
 </body>
 
 <!-- dustech/contact.html  13 Nov 2019 12:55:21 GMT -->
