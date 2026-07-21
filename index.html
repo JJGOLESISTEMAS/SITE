@@ -2,6 +2,7 @@
 <html lang="es">
 
 <!-- dustech/index-3.html  13 Nov 2019 12:55:20 GMT -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,7 @@
 
     <title> JJ GOLE S.A. DE C.V. | Inicio </title>
     <link rel="icon" href="img/Logotipo01FB.ico" type="image/x-icon">
-    
+
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/flaticon.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -32,6 +33,11 @@
 
     <link href="estilos.css" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -49,12 +55,16 @@
             <div class="loader">
                 <div class="gear two">
                     <svg viewbox="0 0 100 100" fill="#46464d">
-                        <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
+                        <path
+                            d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z">
+                        </path>
                     </svg>
                 </div>
                 <div class="gear three">
                     <svg viewbox="0 0 100 100" fill="#fd5f17">
-                        <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
+                        <path
+                            d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z">
+                        </path>
                     </svg>
                 </div>
             </div>
@@ -87,8 +97,8 @@
                             </li>
                             <li><a href="about.html">Nosotros</a></li>
                             <li class="menu-item-has-children">
-                                <a href="services.html">Servicios</a>
-                                 <!--<ul class="sub-menu">
+                                <a href="services2.html">Servicios</a>
+                                <!--<ul class="sub-menu">
                                     <li><a href="about.html">About</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                     <li><a href="testimonials.html">Testimonials</a></li>
@@ -105,7 +115,7 @@
                                 <ul class="sub-menu">
                                     <li><a href="Project_Execut.html">Proyectos Ejecutados</a></li>
                                     <li><a href="services_jjgole.html">Proyectos Destacados</a></li>
-                                     <!--<li><a href="service-single.html">Mechanical Engineering</a></li>
+                                    <!--<li><a href="service-single.html">Mechanical Engineering</a></li>
                                     <li><a href="oil-gas.html">Oil And Gas</a></li>
                                     <li><a href="power-energy.html">Power And Energy</a></li>
                                     <li><a href="sanitary-plumbing.html">Sanitary & Plumbing</a></li>
@@ -114,7 +124,7 @@
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="Certificados.html">Certificaciones</a>
-                                 <!--<ul class="sub-menu">
+                                <!--<ul class="sub-menu">
                                     <li><a href="portfolio.html">Projects</a></li>
                                     <li><a href="portfolio-s2.html">Projects style 2</a></li>
                                     <li><a href="project-single.html">Project single</a></li>
@@ -122,7 +132,7 @@
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="dowloads.html">Descargables</a>
-                                 <!--<ul class="sub-menu">
+                                <!--<ul class="sub-menu">
                                     <li><a href="blog.html">Blog</a></li>
                                     <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
                                     <li><a href="blog-fullwidth.html">Blog full width</a></li>
@@ -184,11 +194,12 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div data-swiper-parallax="500" class="slide-btns">
-                                    <a href="services" class="theme-btn">Nuestros Servicios</a> 
-                                    <a href="https://www.facebook.com/profile.php?id=100090913023225" class="theme-btn-s2">Más Acerca de Nosotros</a> 
+                                    <a href="services" class="theme-btn">Nuestros Servicios</a>
+                                    <a href="https://www.facebook.com/profile.php?id=100090913023225"
+                                        class="theme-btn-s2">Más Acerca de Nosotros</a>
                                 </div>
                             </div>
-                        </div> <!-- end slide-inner --> 
+                        </div> <!-- end slide-inner -->
                     </div> <!-- end swiper-slide -->
 
                     <div class="swiper-slide">
@@ -202,11 +213,12 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div data-swiper-parallax="500" class="slide-btns">
-                                    <a href="services" class="theme-btn">Nuestros Servicios</a> 
-                                    <a href="https://www.facebook.com/profile.php?id=100090913023225" class="theme-btn-s2">Más Acerca de Nosotros</a> 
+                                    <a href="services" class="theme-btn">Nuestros Servicios</a>
+                                    <a href="https://www.facebook.com/profile.php?id=100090913023225"
+                                        class="theme-btn-s2">Más Acerca de Nosotros</a>
                                 </div>
                             </div>
-                        </div> <!-- end slide-inner --> 
+                        </div> <!-- end slide-inner -->
                     </div> <!-- end swiper-slide -->
 
                     <div class="swiper-slide">
@@ -221,12 +233,13 @@
                                 <div class="clearfix"></div>
                                 <div data-swiper-parallax="500" class="slide-btns">
                                     <a href="services.html" class="theme-btn">Nuestros Servicios</a>
-                                    <a href="https://www.facebook.com/profile.php?id=100090913023225" class="theme-btn-s2">Mas Acerca de Nosotros</a>
+                                    <a href="https://www.facebook.com/profile.php?id=100090913023225"
+                                        class="theme-btn-s2">Mas Acerca de Nosotros</a>
                                 </div>
                             </div>
                         </div> <!-- end slide-inner -->
                     </div> <!-- end swiper-slide -->
-                    
+
                     <div class="swiper-slide">
                         <div class="slide-inner slide-bg-image" data-background="assets/images/slider/slide-4.jpg">
                             <div class="container">
@@ -239,7 +252,8 @@
                                 <div class="clearfix"></div>
                                 <div data-swiper-parallax="500" class="slide-btns">
                                     <a href="services.html" class="theme-btn">Nuestros Servicios</a>
-                                    <a href="https://www.facebook.com/profile.php?id=100090913023225" class="theme-btn-s2">Mas Acerca de Nosotros</a>
+                                    <a href="https://www.facebook.com/profile.php?id=100090913023225"
+                                        class="theme-btn-s2">Mas Acerca de Nosotros</a>
                                 </div>
                             </div>
                         </div> <!-- end slide-inner -->
@@ -258,7 +272,8 @@
                                 <div class="clearfix"></div>
                                 <div data-swiper-parallax="500" class="slide-btns">
                                     <a href="services.html" class="theme-btn">Nuestros Servicios</a>
-                                    <a href="https://www.facebook.com/profile.php?id=100090913023225" class="theme-btn-s2">Mas Acerca de Nosotros</a>
+                                    <a href="https://www.facebook.com/profile.php?id=100090913023225"
+                                        class="theme-btn-s2">Mas Acerca de Nosotros</a>
                                 </div>
                             </div>
                         </div> <!-- end slide-inner -->
@@ -276,7 +291,8 @@
                                 <div class="clearfix"></div>
                                 <div data-swiper-parallax="500" class="slide-btns">
                                     <a href="services.html" class="theme-btn">Nuestros Servicios</a>
-                                    <a href="https://www.facebook.com/profile.php?id=100090913023225" class="theme-btn-s2">Mas Acerca de Nosotros</a>
+                                    <a href="https://www.facebook.com/profile.php?id=100090913023225"
+                                        class="theme-btn-s2">Mas Acerca de Nosotros</a>
                                 </div>
                             </div>
                         </div> <!-- end slide-inner -->
@@ -295,7 +311,8 @@
                                 <div class="clearfix"></div>
                                 <div data-swiper-parallax="500" class="slide-btns">
                                     <a href="services.html" class="theme-btn">Nuestros Servicios</a>
-                                    <a href="https://www.facebook.com/profile.php?id=100090913023225" class="theme-btn-s2">Mas Acerca de Nosotros</a>
+                                    <a href="https://www.facebook.com/profile.php?id=100090913023225"
+                                        class="theme-btn-s2">Mas Acerca de Nosotros</a>
                                 </div>
                             </div>
                         </div> <!-- end slide-inner -->
@@ -305,7 +322,8 @@
                         <div class="slide-inner slide-bg-image" data-background="assets/images/slider/slide-8.jpg">
                             <div class="container">
                                 <div data-swiper-parallax="300" class="slide-title">
-                                    <h2> Ofrecemos un servicio de calidad en poco tiempo con resultados comprobables</h2>
+                                    <h2> Ofrecemos un servicio de calidad en poco tiempo con resultados comprobables
+                                    </h2>
                                 </div>
                                 <div data-swiper-parallax="400" class="slide-text">
                                     <p></p>
@@ -313,7 +331,8 @@
                                 <div class="clearfix"></div>
                                 <div data-swiper-parallax="500" class="slide-btns">
                                     <a href="services.html" class="theme-btn">Nuestros Servicios</a>
-                                    <a href="https://www.facebook.com/profile.php?id=100090913023225" class="theme-btn-s2">Mas Acerca de Nosotros</a>
+                                    <a href="https://www.facebook.com/profile.php?id=100090913023225"
+                                        class="theme-btn-s2">Mas Acerca de Nosotros</a>
                                 </div>
                             </div>
                         </div> <!-- end slide-inner -->
@@ -364,47 +383,47 @@
             </div> <!-- end container -->
         </section>
         <!-- end feature-section-s2 -->
-<br>
- <!-- start fun-fact-section -->
- <section class="fun-fact-section">
-    <div class="container">
-        <div class="row">
-            <div class="col col-xs-12">
-                <div class="fun-fact-grids clearfix">
-                    <div class="grid">
-                        <div class="info">
-                            <i class="fi flaticon-worker"></i>
-                            <h3><span class="odometer" data-count="50">00</span>+</h3>
-                            <p>Empleados</p>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <div class="info">
-                            <i class="fi flaticon-engineer"></i>
-                            <h3><span class="odometer" data-count="50">00</span>+</h3>
-                            <p>Proyectos</p>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <div class="info">
-                            <i class="fi flaticon-trophy"></i>
-                            <h3><span class="odometer" data-count="10">00</span>+</h3>
-                            <p>Certificaciónes</p>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <div class="info">
-                            <i class="fi flaticon-like-1"></i>
-                            <h3><span class="odometer" data-count="100">00</span>%</h3>
-                            <p>Clientes Satisfechos</p>
+        <br>
+        <!-- start fun-fact-section -->
+        <section class="fun-fact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="fun-fact-grids clearfix">
+                            <div class="grid">
+                                <div class="info">
+                                    <i class="fi flaticon-worker"></i>
+                                    <h3><span class="odometer" data-count="50">00</span>+</h3>
+                                    <p>Empleados</p>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <div class="info">
+                                    <i class="fi flaticon-engineer"></i>
+                                    <h3><span class="odometer" data-count="50">00</span>+</h3>
+                                    <p>Proyectos</p>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <div class="info">
+                                    <i class="fi flaticon-trophy"></i>
+                                    <h3><span class="odometer" data-count="10">00</span>+</h3>
+                                    <p>Certificaciónes</p>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <div class="info">
+                                    <i class="fi flaticon-like-1"></i>
+                                    <h3><span class="odometer" data-count="100">00</span>%</h3>
+                                    <p>Clientes Satisfechos</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div> <!-- end container -->
-</section>
-<!-- end fun-fact-section -->
+            </div> <!-- end container -->
+        </section>
+        <!-- end fun-fact-section -->
 
         <!-- start service-section-s2 -->
         <section class="service-section-s2 section-padding">
@@ -413,16 +432,19 @@
                     <div class="col col-md-6">
                         <div class="section-title-s2" style="text-align: left;">
                             <span><b>Nuestras Mejores Soluciones Industriales</b></span>
-                            <h4>Brindando lo mejores Servicios de la Industria, Somos una compañía con más de 10 años de trayectoria, nos dedicamos al servicio
-                                metalúrgico.</h4>
+                            <h4>En JJ GOLE S.A. DE C.V., Brindamos servicios de ingeniería, construcción y mantenimiento
+                                industrial en las áreas civil,
+                                metal-mecánico e instalaciones eléctricas de media tensión y comercialización de
+                                productos para la industria.</h4>
                         </div>
                     </div>
                     <div class="col col-md-6">
                         <div class="title-text">
                             <p>
-                                <b>JJ GOLE</b> es una compañía que además del tiempo que tiene en el mercado nuestros clientes
-                                nos respaldan. Por ese motivo
-                                ofrecemos un servicio de calidad en poco tiempo con resultados comprobables.
+                                Nuestra experiencia de más de 15 años respalda nuestro trabajo con clientes potenciales
+                                de talla nacional en diferentes
+                                partes de la República Mexicana, garantizamos un resultado satisfactorio en cada uno de
+                                los proyectos en los cuales participamos
                             </p>
                         </div>
                     </div>
@@ -480,8 +502,8 @@
                 <div class="row">
                     <div class="col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
                         <div class="section-title-s3">
-                            <span><b>Nuestra Caracteristica</b></span>
-                            <h2>¡Por Qué Elegirnos!</h2>
+                            <span><b>¿Por qué elegir JJ GOLE?</b></span>
+                            <h2>¡Por qué elegirnos! </h2>
                             <!--<p>Hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him</p>-->
                         </div>
                     </div>
@@ -491,23 +513,25 @@
                         <div class="why-choose-grids clearfix">
                             <div class="grid">
                                 <i class="fi flaticon-network-1"></i>
-                                <h3>Equipo Totalmente Professional</h3>
-                                <!--<p>Whole of her lower arm towards the viewer. Gregor then turned to look out the window</p>-->
+                                <h3>Expertos con Amplia Experiencia</h3>
+                                <p>Más de 10 años ofreciendo soluciones confiables para la industria.</p>
                             </div>
                             <div class="grid">
                                 <i class="fi flaticon-circular-label-with-certified-stamp"></i>
-                                <h3>Personal Certificado</h3>
-                                <!--<p>Whole of her lower arm towards the viewer. Gregor then turned to look out the window</p>-->
+                                <h3>Personal Certificado y Capacitado</h3>
+                                <p>Técnicos capacitados bajo estándares nacionales e internacionales.</p>
                             </div>
                             <div class="grid">
                                 <i class="fi flaticon-chip"></i>
-                                <h3>Utilizamos lo Ultimo en Tecnologia</h3>
-                                <!--<p>Whole of her lower arm towards the viewer. Gregor then turned to look out the window</p>-->
+                                <h3>Calidad Garantizada</h3>
+                                <p>Comprometidos con ofrecer productos y servicios que cumplen con los más altos
+                                    estándares de calidad.</p>
                             </div>
                             <div class="grid">
                                 <i class="fi flaticon-24-hours"></i>
-                                <h3>Soporte Profesional 24/7</h3>
-                                <!--<p>Whole of her lower arm towards the viewer. Gregor then turned to look out the window</p>-->
+                                <h3>Asesoria Técnica Personalizada</h3>
+                                <p>Nuestro equipo analiza tus requerimientos y propone mejoras técnicas que aporten
+                                    mayor seguridad, desempeño y vida útil a tus proyectos</p>
                             </div>
                         </div>
                     </div>
@@ -651,28 +675,83 @@
                 <div class="row">
                     <div class="section-title-s2">
                         <h4 class="text-justify">
-                            Para JJ GOLE la satisfacción de nuestros clientes es nuestro mayor compromiso; 
-                            por tal motivo nuestros productos y servicios son apegados a los más altos estándares de calidad,todo esto en base 
-                            a las Políticas de Calidad que maneja nuestra empresa garantiza la eficiencia y eficacia en cada etapa y proceso. 
+                            En JJ GOLE, la satisfacción de nuestros clientes es la base de nuestro trabajo.
+                            Nos comprometemos a ofrecer productos y servicios de la más alta calidad,
+                            sustentados en nuestras Políticas de Calidad y en la mejora continua de nuestros procesos.
+                            De esta manera, garantizamos eficiencia, eficacia y soluciones confiables que generan valor
+                            en cada proyecto.
                         </h4>
                     </div>
                     <div class="col col-xs-12">
                         <div class="partner-grids partners-slider">
-                            <div class="grid">
-                                <img src="img/logs/5.png" alt>
+
+
+
+                            <div class="grid partner-item">
+                                <img src="img/logs/5.png" class="partner-logo" alt="PEMEX">
+
+                                <div class="partner-overlay">
+                                    <h5>PEMEX TRANSFORMACIÓN INDUSTRIAL</h5>
+                                </div>
                             </div>
-                            <div class="grid">
-                                <img src="img/logs/sld2.png" alt>
+
+                            <div class="grid partner-item">
+                                <img src="img/logs/sld6.png" class="partner-logo" alt="PEMEX">
+
+                                <div class="partner-overlay">
+                                    <h5>FERTINAL</h5>
+                                </div>
                             </div>
-                            <div class="grid">
-                                <img src="img/logs/sld1.png" alt>
+
+                            <div class="grid partner-item">
+                                <img src="img/logs/sld1.png" class="partner-logo" alt="PEMEX">
+
+                                <div class="partner-overlay">
+                                    <h5>PEMEX LOGISTICA</h5>
+                                </div>
                             </div>
-                            <div class="grid">
-                                <img src="img/logs/sld5.png" alt>
+
+                            <div class="grid partner-item">
+                                <img src="img/logs/sld5.png" class="partner-logo" alt="PEMEX">
+
+                                <div class="partner-overlay">
+                                    <h5>AIR LIQUIDE</h5>
+                                </div>
                             </div>
-                            <div class="grid">
-                                <img src="img/logs/sld3.png" alt>
+
+                            <div class="grid partner-item">
+                                <img src="img/logs/sld3.png" class="partner-logo" alt="PEMEX">
+
+                                <div class="partner-overlay">
+                                    <h5>PEMEX REFINACIÓN</h5>
+                                </div>
                             </div>
+
+                            <div class="grid partner-item">
+                                <img src="img/logs/sld7.png" class="partner-logo" alt="PEMEX">
+
+                                <div class="partner-overlay">
+                                    <h5>CEMENTOS FORTALEZA</h5>
+                                </div>
+                            </div>
+
+                            <div class="grid partner-item">
+                                <img src="img/logs/sld8.png" class="partner-logo" alt="PEMEX">
+
+                                <div class="partner-overlay">
+                                    <h5>GERDAU CORSA</h5>
+                                </div>
+                            </div>
+
+                            <div class="grid partner-item">
+                                <img src="img/logs/sld2.png" class="partner-logo" alt="PEMEX">
+
+                                <div class="partner-overlay">
+                                    <h5>INDESIN SA DE CV</h5>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -681,7 +760,7 @@
         <!-- end partners-section -->
 
 
-       
+
 
         <!-- start team-section -->
         <!--<section class="team-section section-padding">
@@ -781,72 +860,113 @@
         </section>-->
         <!-- end team-section -->
 
+        <!-- start partners-section -->
+        <div class="container">
 
-<!-- start partners-section -->
-<section class="partners-section">
-    <br>
-    <h2> Nuestras Certificaciones</h2>
-    <div class="container">
-        <div class="row">
-            <div class="section-title-s2">
-                <h4 class="text-justify">
-                    En JJ GOLE, nos enorgullece mantener los más altos estándares de calidad, seguridad y compromiso ambiental 
-                    en todos nuestros procesos. Contamos con una sólida base de certificaciones que avalan nuestra capacidad 
-                    para ofrecer productos y servicios de excelencia, alineados con las mejores prácticas industriales y globales.
-                </h4>
-            </div>
-            <ul style="text-align: left;">
-                <b >Sellos ASME</b>
+            <div class="row justify-content-center">
 
-                <li><i class="ti-bookmark"></i>ASME "R"</li>
-                <li><i class="ti-bookmark"></i>ASME "U"</li>
-                <li><i class="ti-bookmark"></i>ASME "U2"</li>
-                <li><i class="ti-bookmark"></i>ASME "NB"</li>
-                <li><i class="ti-line-dotted"></i></li>
-                <b style="text-align: left;">Certificaciones ISO</b>
-                <li><i class="ti-bookmark"></i>ISO 9001:2015 </li>
-                <li><i class="ti-bookmark"></i>ISO 14001:2015</li>
-                <li><i class="ti-bookmark"></i>ISO 45001:2018</li>
-            </ul>
-            <ul style="text-align: left;">
-                <li><i class="ti-line-dotted"></i></li>
-            </ul>
+                <div class="col-lg-12">
 
-            <div class="col col-xs-12">
-                <div class="partner-grids partners-slider">
-                    <div class="grid">
-                        <img src="img/Pag/20.png" alt>
+                    <div class="cert-card">
+
+                        <h3 class="cert-title">
+                            <i class="ti-medall-alt"></i>
+                            Certificaciones y Sellos
+                        </h3>
+
+                        <div class="row align-items-center justify-content-center">
+
+                            <!-- Información -->
+                            <div class="col-lg-5">
+
+                                <div class="cert-section">
+                                    <h5><i class="ti-bookmark-alt"></i> Sellos ASME</h5>
+
+                                    <ul class="cert-list">
+                                        <li><pre>ASME "R"</pre></li>
+                                        <li><pre>ASME "U"</pre></li>
+                                        <li><pre>ASME "U2"</pre></li>
+                                        <!--<li>ASME "NB"</li>-->
+                                    </ul>
+                                </div>
+
+                                <div class="cert-section mt-4">
+                                    <h5><i class="ti-bookmark-alt"></i> Certificaciones ISO</h5>
+
+                                    <ul class="cert-list">
+                                        <li><pre>ISO 9001:2015</pre></li>
+                                        <li><pre>ISO 14001:2015</pre></li>
+                                        <li><pre>ISO 45001:2018</pre></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <!-- Imagen -->
+                            <div class="text-center col-lg-7">
+                                <img src="img/logs/cert2.png" class="cert-image img-rounded" alt="">
+                            </div>
+
+                        </div>
+
                     </div>
-                    <div class="grid">
-                        <img src="img/Pag/24.png" alt>
-                    </div>
-                    <div class="grid">
-                        <img src="img/Pag/27.jpg" alt>
-                    </div>
-                    <div class="grid">
-                        <img src="img/Pag/30.jpg" alt>
-                    </div>
-                    <div class="grid">
-                        <img src="img/Pag/33.jpg" alt>
-                    </div>
-                    <div class="grid">
-                        <img src="img/Pag/39.jpg" alt>
-                    </div>
-                    <div class="grid">
-                        <img src="img/Pag/42.jpg" alt>
-                    </div>
-                    <div class="grid">
-                        <img src="img/Pag/36.jpg" alt>
-                    </div>
-                    <div class="grid">
-                        <img src="img/Pag/43.jpg" alt>
-                    </div>
+
                 </div>
+
             </div>
+
         </div>
-    </div> <!-- end container -->
-</section>
-<!-- end partners-section -->
+        <br>
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-12">
+
+                    <div class="cert-card">
+
+                        <h3 class="cert-title">
+                            <i class="ti-medall-alt"></i>
+                            Otras Certificaciones
+                        </h3>
+
+                        <div class="row align-items-center justify-content-center">
+
+                            <!-- Información -->
+                            <div class="col-lg-5">
+
+
+                                <div class="cert-section mt-4">
+                                    <h5><i class="ti-bookmark-alt"></i> Otras Certificaciones</h5>
+
+                                    <ul class="cert-list">
+                                        <li>
+                                          <pre>- CERTIFICADO DE REGISTRO PEMEX – HIIP 2.0</pre>
+                                        </li>
+										<li><pre>- Registro D-U-N-S®</PRE></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Imagen -->
+                            <div class="text-center col-lg-7">
+                                <img src="img/logs/CERT3.png" class="cert-image img-rounded" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+
+        <!-- end partners-section -->
 
         <!-- start quote-section-s2 -->
         <section class="quote-section quote-section-s2" style="text-align: left;">
@@ -854,15 +974,16 @@
                 <div class="left-col">
                     <!--<h2>Imagination What we can easily see is only a small</h2>-->
                     <div class="details">
-                        <br>
-                        <br>
                         <p>
-                            En JJ GOLE, valoramos cada oportunidad de comunicación con nuestros clientes y socios. 
-                            Si tienes alguna pregunta, solicitud o necesitas más información sobre nuestros productos y servicios, 
-                            no dudes en ponerte en contacto con nosotros. 
-                            <br>Nuestro equipo estará encantado de ayudarte y proporcionarte 
-                            la asistencia que necesites.
-                            Por favor, completa el siguiente formulario con tus datos y consulta, y nos pondremos en contacto contigo lo antes posible.
+                            En JJ GOLE, estamos comprometidos con brindar una atención cercana, oportuna y de calidad.
+                            Si deseas obtener más información sobre nuestros productos
+                            y servicios, solicitar una cotización o resolver cualquier duda, será un gusto atenderte.
+                            <br>
+                            <br>
+                            Nuestro equipo está preparado para ofrecerte la asesoría y el acompañamiento que necesitas
+                            para encontrar la mejor solución para tu proyecto.
+                            Completa el siguiente formulario con tus datos y tu consulta, y nos pondremos en contacto
+                            contigo a la brevedad posible.
                         </p>
                         <div class="clearfix">
                             <ul>
@@ -876,7 +997,8 @@
                         </div>
                         <div class="btns">
                             <a href="services.html" class="theme-btn">Nuestros Servicios</a>
-                            <a href="https://www.facebook.com/profile.php?id=100090913023225" class="theme-btn-s2">Mas Acerca de Nosotros</a>
+                            <a href="https://www.facebook.com/profile.php?id=100090913023225" class="theme-btn-s2">Mas
+                                Acerca de Nosotros</a>
                         </div>
                         <br>
                         <br>
@@ -885,13 +1007,17 @@
                     </div>
                 </div>
                 <div class="right-col">
-                    <div class="quote-area" style="text-align: left;" >
-                        <h3>Contactanos, Solcita Información</h3>
+                    <div class="quote-area" style="text-align: left;">
+                        <h3>Contactanos, Solicita Información</h3>
                         <p>Ingresa los siguientes datos para ponernos en Contacto</p>
-                        <form id="form" action="https://formspree.io/f/xldjpjod" method="POST" >
+                        <form id="form" action="https://formspree.io/f/xldjpjod" method="POST">
                             <div>
                                 <input type="text" class="form-control" name="name" id="name"
                                     placeholder="Nombre Completo *">
+                            </div>
+                            <div>
+                                <input type="text" class="form-control" name="company" id="company"
+                                    placeholder="Empresa*">
                             </div>
                             <div>
                                 <input type="email" class="form-control" name="email" id="email"
@@ -906,7 +1032,8 @@
                                 <textarea class="form-control" name="note" id="note"
                                     placeholder="Descripcion"></textarea>
                             </div>
-                           
+                            <br>
+
                             <button type="submit" class="theme-btn">Enviar</button>
                             <p style="color: #d46e0e; font-size: 12px; font-weight: bold;" id="my-form-status"></p>
                             <!--<input class="theme-btn" type="submit" value="Enviar">
@@ -921,18 +1048,18 @@
                                 <div id="error"> Ocurrió un error al enviar el correo electrónico. Por favor, inténtelo
                                     de nuevo más tarde. </div>-->
 
-                            </div>
-                        </form>
-                        <br>
                     </div>
+                    </form>
+                    <br>
                 </div>
             </div>
-        </section>
-        <!-- end quote-section-s2 -->
+    </div>
+    </section>
+    <!-- end quote-section-s2 -->
 
 
-        <!-- start blog-section -->
-        <!--<section class="blog-section section-padding">
+    <!-- start blog-section -->
+    <!--<section class="blog-section section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
@@ -984,172 +1111,146 @@
                 </div>               
             </div> end container 
         </section>-->
-        <!-- end blog-section -->
+    <!-- end blog-section -->
 
 
-        <!-- start cta-section -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-lg-6 col-md-6">
-                        <div class="cta-text">
-                            <!--<h3>Lets Get in Touch!</h3>
-                            <p>Raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.</p>-->
-                        </div>
-                    </div>
-                    <div class="col col-lg-5 col-lg-offset-1 col-md-6">
-                        <div class="contact-info">
-                            <div>
-                                <!--<i class="fi flaticon-call"></i>
-                                <h4>Call us</h4>
-                                <p>+654894754</p>-->
-                            </div>
-                            <div>
-                                <!--<i class="fi flaticon-contact"></i>
-                                <h4>Email us</h4>
-                                <p>demo@example.com</p>-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end container -->
-        </section>
-        <!-- end cta-section -->
-
-
-        <!-- start site-footer -->
-<footer class="site-footer">
-    <div class="upper-footer">
+    <!-- start cta-section -->
+    <section class="cta-section">
         <div class="container">
             <div class="row">
-                <div class="col col-lg-3 col-md-3 col-sm-6">
-                    <div class="widget about-widget" style="text-align: left;">
-                        <div class="logo widget-title">
-                            <img src="img/logotipoHP.png" alt>
-                        </div>
-                        <p></p>
-                        <div class="social-icons">
-                            <ul>
-                                <li><a href="https://www.facebook.com/profile.php?id=100090913023225"><i
-                                    class="ti-facebook"></i></a></li>
-
-                        <li><a href="https://mx.linkedin.com/"><i class="ti-linkedin"></i></a></li>
-                        <!--  <li><a href="#"><i class="ti-pinterest"></i></a></li>
-                          <li><a href="https://twitter.com/?lang=es"><i class="ti-twitter-alt"></i></a></li>
-                        <li><a href="#"><i class="ti-vimeo-alt"></i></a></li>-->
-                            </ul>
-                        </div>
+                <div class="col col-lg-6 col-md-6">
+                    <div class="cta-text">
+                        <!--<h3>Lets Get in Touch!</h3>
+                            <p>Raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.</p>-->
                     </div>
                 </div>
-
-                <div class="col col-lg-3 col-md-3 col-sm-6" style="text-align: left;">
-                    <div class="widget contact-widget service-link-widget">
-                        <div class="widget-title"  style="text-align: left;">
-                            <h3>Dirección Oficinas</h3>
+                <div class="col col-lg-5 col-lg-offset-1 col-md-6">
+                    <div class="contact-info">
+                        <div>
+                            <!--<i class="fi flaticon-call"></i>
+                                <h4>Call us</h4>
+                                <p>+654894754</p>-->
                         </div>
-                        <ul>
-                            <li><b>Cadereyta, Nuevo León</b></li>
-                            <li> Calle: Zaragoza No. 608-A PTE, Colonia: Zona Centro, C.P.: 67480, Cadereyta
-                                Jimenez, Nuevo León.
-                            </li>
-                            <li><span>Télefono:</span> 828-284-32-00</li>
-                            <li><span>Email:</span> Cadereyta@jjgole.com</li>
-                            <li><span>Horario:</span> Lunes - Viernes <br>08:00 AM - 06:00 PM <br>Sábado 08:00 AM - 01:00 PM</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col col-lg-3 col-md-3 col-sm-6">
-                    <div class="widget contact-widget service-link-widget" style="text-align: left;">
-                        <div class="widget-title">
-                            <h3>Direccion de Talleres</h3>
+                        <div>
+                            <!--<i class="fi flaticon-contact"></i>
+                                <h4>Email us</h4>
+                                <p>demo@example.com</p>-->
                         </div>
-                        <ul>
-                            <li><b>Atitalaquia, Hidalgo</b></li>
-                                    <li>Calle: Primera Cerrada de Camino Real a Bojay, S/N. , Colonia: La Loma, C.P.:
-                                        42970, Atitalaquia, Hidalgo.</li>
-                                    <li><span>Télefono:</span> 778-738-02-27</li>
-                                    <li><span>Email:</span> inspeccion@jjgole.com</li>
-                                    <li><span>Horario:</span> Lunes - Viernes <br>08:00 AM - 06:00 PM <br>Sábado 08:00 AM - 01:00 PM</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col col-lg-3 col-md-3 col-sm-6">
-                    <div class="widget newsletter-widget" style="text-align: left;">
-                        <div class="widget-title">
-                            <h3>Boletin Informativo</h3>
-                        </div>
-                        <p>Se le notificará cuando aparezca algo nuevo..</p>
-                        <form id="form1" action="https://formspree.io/f/xldjpjod" method="POST">
-                            <div >
-                                <input type="email" class="form-control" name="email" placeholder="Correo Electronico * "required>
-                            </div>
-                            <div class="submit clearfix">
-                                <button type="submit" class="theme-btn"><i class="ti-email"></i></button>
-                            </div>
-                            <p style="color: #d46e0e; font-size: 12px; font-weight: bold;" id="my-form-status1"></p>
-                        </form>
                     </div>
                 </div>
             </div>
         </div> <!-- end container -->
-    </div>
+    </section>
+    <!-- end cta-section -->
 
-    <div class="lower-footer">
-        <div class="container">
-            <div class="row">
-                <div class="separator"></div>
-                <div class="col col-xs-12" style="text-align: right;">
-                    <p class="copyright"><a href="templateshub.net">Templates Hub</a></p>
-                    <div class="extra-link">
-                        <ul><li>| JJ GOLE S.A. de C.V. - Copyright &copy; - 2025 |</li>
-                            <li><a href="aviso_priv.html">|Aviso de Privacidad|</a></li>
-                            <li>|Derechos reservados, JJ GOLE S.A. de C.V.|</li>
-                             <!-- <li><a href="#">Privace & Policy</a></li>
+
+    <!-- start site-footer -->
+    <footer class="site-footer">
+        <div class="upper-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-3 col-md-3 col-sm-6">
+                        <div class="widget about-widget" style="text-align: left;">
+                            <div class="logo widget-title">
+                                <img src="img/LOGO/LOGS3.png" alt width="554" height="450" class="img-rounded img-responsive">
+                            </div>
+                            <p></p>
+                            <div class="social-icons">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100090913023225"><i
+                                                class="ti-facebook"></i></a></li>
+
+                                    <li><a href="https://mx.linkedin.com/"><i class="ti-linkedin"></i></a></li>
+                                    <!--  <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                          <li><a href="https://twitter.com/?lang=es"><i class="ti-twitter-alt"></i></a></li>
+                        <li><a href="#"><i class="ti-vimeo-alt"></i></a></li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-lg-3 col-md-3 col-sm-6" style="text-align: left;">
+                        <div class="widget contact-widget service-link-widget">
+                            <div class="widget-title" style="text-align: left;">
+                                <h3>Dirección Oficinas</h3>
+                            </div>
+                            <ul>
+                                <li><b>Cadereyta, Nuevo León</b></li>
+                                <li> Calle: Zaragoza No. 608-A PTE, Colonia: Zona Centro, C.P.: 67480, Cadereyta
+                                    Jimenez, Nuevo León.
+                                </li>
+                                <li><span>Télefono:</span> 828-284-32-00</li>
+                                <li><span>Email:</span> Cadereyta@jjgole.com</li>
+                                <li><span>Horario:</span> Lunes - Viernes <br>08:00 AM - 06:00 PM <br>Sábado 08:00 AM -
+                                    01:00 PM</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col col-lg-3 col-md-3 col-sm-6">
+                        <div class="widget contact-widget service-link-widget" style="text-align: left;">
+                            <div class="widget-title">
+                                <h3>Direccion de Talleres</h3>
+                            </div>
+                            <ul>
+                                <li><b>Atitalaquia, Hidalgo</b></li>
+                                <li>Calle: Primera Cerrada de Camino Real a Bojay, S/N. , Colonia: La Loma, C.P.:
+                                    42970, Atitalaquia, Hidalgo.</li>
+                                <li><span>Télefono:</span> 778-738-02-27</li>
+                                <li><span>Email:</span> inspeccion@jjgole.com</li>
+                                <li><span>Horario:</span> Lunes - Viernes <br>08:00 AM - 06:00 PM <br>Sábado 08:00 AM -
+                                    01:00 PM</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col col-lg-3 col-md-3 col-sm-6">
+                        <div class="widget newsletter-widget" style="text-align: left;">
+                            <div class="widget-title">
+                                <h3>Boletin Informativo</h3>
+                            </div>
+                            <p>Se le notificará cuando aparezca algo nuevo..</p>
+                            <form id="form1" action="https://formspree.io/f/xldjpjod" method="POST">
+                                <div>
+                                    <input type="email" class="form-control" name="email"
+                                        placeholder="Correo Electronico * " required>
+                                </div>
+                                <div class="submit clearfix">
+                                    <button type="submit" class="theme-btn"><i class="ti-email"></i></button>
+                                </div>
+                                <p style="color: #d46e0e; font-size: 12px; font-weight: bold;" id="my-form-status1"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+        </div>
+
+        <div class="lower-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="separator"></div>
+                    <div class="col col-xs-12" style="text-align: right;">
+                        <p class="copyright"><a href="templateshub.net">Templates Hub</a></p>
+                        <div class="extra-link">
+                            <ul>
+                                <li>| JJ GOLE S.A. de C.V. - Copyright &copy; - 2026 |</li>
+                                <li><a href="aviso_priv.html">|Aviso de Privacidad|</a></li>
+                                <li>|Derechos reservados, JJ GOLE S.A. de C.V.|</li>
+                                <!-- <li><a href="#">Privace & Policy</a></li>
                              <li><a href="#">Terms</a></li>
                              <li><a href="#">About us</a></li>
                              <li><a href="#">FAQ</a></li>-->
-                         </ul>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</footer>
-        <!-- end site-footer -->
+    </footer>
+    <!-- end site-footer -->
 
     </div>
     <!-- end of page-wrapper -->
-<!-- Botón flotante para abrir la ventana emergente -->
-<a href="javascript:void(0);" class="whatsapp-button" onclick="openModal()">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-</a>
-
-<!-- Fondo oscuro para la ventana flotante -->
-<div id="overlay" onclick="closeModal()"></div>
-
-<!-- Ventana flotante de selección de WhatsApp -->
-<div id="whatsapp-modal" style="text-align: left;">
-    <div class="whatsapp-modal-header">Iniciar Conversación</div>
-    <div class="whatsapp-modal-message">
-        ¡Hola! Haga clic en uno de nuestros miembros a continuación para chatear en WhatsApp.
-    </div>
-    
-    <!-- Botón para Contacto 1 -->
-    <button  onclick="window.location.href='https://api.whatsapp.com/send?phone=527731150326&text=¡Hola!Me%20Gustaria%20Iniciar%20conversación%20y%20recibir%20Información'">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Contacto 1">
-       Recursos Humanos
-    </button>
-
-    <!-- Botón para Contacto 2 
-    <button onclick="window.location.href='https://api.whatsapp.com/send?phone=529991234567&text=¡Hola!Me%20Gustaria%20Iniciar%20conversación%20y%20recibir%20Información'">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Contacto 2">
-        Contacto 2
-    </button>-->
-
-    <!-- Botón para cerrar la ventana flotante -->
-    <button onclick="closeModal()">Cerrar</button>
-</div>
 
 
     <!-- All JavaScript files
@@ -1167,19 +1268,19 @@
 
     <script>
         var form = document.getElementById('form')
-            async function handleSubmit(event) {
-                event.preventDefault()
-                var status = document.getElementById("my-form-status");
-                var data = new FormData(event.target);
-    
-                fetch(event.target.action, {
-                    method: form.method,
-                    body: data,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                }).then(response =>{
-                    if (response.ok) {
+        async function handleSubmit(event) {
+            event.preventDefault()
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
                     status.innerHTML = "¡Gracias por comunicarte con nosotros! Hemos recibido tu mensaje y nuestro equipo se pondrá en contacto contigo.";
                     form.reset()
                 } else {
@@ -1191,41 +1292,41 @@
                         }
                     })
                 }
-                }).catch(error => {
-                    status.innerHTML = "Ocurrió un error al enviar el correo electrónico. Por favor, inténtelo de nuevo más tarde."
-                });
-            }
-            document.getElementById("my-form-status").style.display = "";
-            form.addEventListener("submit", handleSubmit)
+            }).catch(error => {
+                status.innerHTML = "Ocurrió un error al enviar el correo electrónico. Por favor, inténtelo de nuevo más tarde."
+            });
+        }
+        document.getElementById("my-form-status").style.display = "";
+        form.addEventListener("submit", handleSubmit)
     </script>
-    
+
     <script>
-    var form1 = document.getElementById('form1');
+        var form1 = document.getElementById('form1');
         async function handleSubmit(event) {
             event.preventDefault()
-    
+
             var status1 = document.getElementById("my-form-status1");
             var data1 = new FormData(event.target);
-    
+
             fetch(event.target.action, {
                 method: form1.method,
                 body: data1,
                 headers: {
                     'Accept': 'application/json'
                 }
-            }).then(response =>{
+            }).then(response => {
                 if (response.ok) {
-                status1.innerHTML = "¡Gracias por comunicarte con nosotros!";
-                form1.reset()
-            } else {
-                response.json().then(data => {
-                    if (Object.hasOwn(data, 'errors')) {
-                        status1.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                    } else {
-                        status1.innerHTML = "Ocurrió un error al enviar el correo electrónico. Por favor, inténtelo de nuevo más tarde."
-                    }
-                })
-            }
+                    status1.innerHTML = "¡Gracias por comunicarte con nosotros!";
+                    form1.reset()
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status1.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status1.innerHTML = "Ocurrió un error al enviar el correo electrónico. Por favor, inténtelo de nuevo más tarde."
+                        }
+                    })
+                }
             }).catch(error => {
                 status1.innerHTML = "Ocurrió un error al enviar el correo electrónico. Por favor, inténtelo de nuevo más tarde."
             });
@@ -1233,23 +1334,24 @@
         document.getElementById("my-form-status1").style.display = "";
         form1.addEventListener("submit", handleSubmit)
     </script>
-    
+
     <script>
         // Función para abrir la ventana flotante
         function openModal() {
             document.getElementById('whatsapp-modal').style.display = 'block';
             document.getElementById('overlay').style.display = 'block';
         }
-    
+
         // Función para cerrar la ventana flotante
         function closeModal() {
             document.getElementById('whatsapp-modal').style.display = 'none';
             document.getElementById('overlay').style.display = 'none';
         }
     </script>
-    
-        
+
+
 </body>
 
 <!-- dustech/index-3.html  13 Nov 2019 12:55:21 GMT -->
+
 </html>

@@ -25,6 +25,10 @@
     <link href="assets/css/owl.transitions.css" rel="stylesheet">
     <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.min.css">
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="gallery.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -55,8 +59,8 @@
             </div>
         </div>
         <!-- end preloader -->
-
-        <header id="header" class="site-header header-style-1">            
+        <!-- Start header -->
+        <header id="header" class="site-header header-style-1">
             <nav class="navigation navbar navbar-default">
                 <div class="container">
                     <div class="navbar-header">
@@ -65,44 +69,45 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html"><img src="img/Logotipo jj g 1.png " class="img-responsive text-hide"></a>
+                        <a class="navbar-brand" href="index.html"><img src="img/Logotipo jj g 1.png" alt></a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse navigation-holder">
-                        <button class="close-navbar"><i class="ti-close"></i></button>
+                        <button aria-label="Name" class="close-navbar"><i class="ti-close"></i></button>
                         <ul class="nav navbar-nav">
                             <li class="menu-item-has-children">
                                 <a href="index.html">Inicio</a>
                                 <ul class="sub-menu">
                                     <li><a href="mision.html">Misión y Visión</a></li>
                                     <li><a href="portfolio.html">Politicas de la Empresa</a></li>
+                                                                        <li><a href="instals.html">Instalaciones</a></li>
+
                                 </ul>
                             </li>
                             <li><a href="about.html">Nosotros</a></li>
                             <li class="menu-item-has-children">
                                 <!--<a href="#">Pages</a>
-                                <ul class="sub-menu">
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="testimonials.html">Testimonials</a></li>
-                                    <li><a href="testimonials-s2.html">Testimonials style 2</a></li>
-                                    <li><a href="team.html">Team</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="404.html">404</a></li>
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="shop-single.html">Shop single</a></li>
-                                </ul>-->
+                        <ul class="sub-menu">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="testimonials-s2.html">Testimonials style 2</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="shop-single.html">Shop single</a></li>
+                        </ul>-->
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="#">Servicios</a>
+                                <a href="services2.html">Servicios</a>
                                 <ul class="sub-menu">
-                                    <li><a href="services.html">Nuestros Servicios</a></li>
                                     <!--<li><a href="services.html">Services</a></li>
-                                    <li><a href="services-s2.html">Services style 2</a></li>
-                                    <li><a href="service-single.html">Mechanical Engineering</a></li>
-                                    <li><a href="oil-gas.html">Oil And Gas</a></li>
-                                    <li><a href="power-energy.html">Power And Energy</a></li>
-                                    <li><a href="sanitary-plumbing.html">Sanitary & Plumbing</a></li>
-                                    <li><a href="electrical-power.html">Electrical Power</a></li>-->
+                            <li><a href="services-s2.html">Services style 2</a></li>
+                            <li><a href="service-single.html">Mechanical Engineering</a></li>
+                            <li><a href="oil-gas.html">Oil And Gas</a></li>
+                            <li><a href="power-energy.html">Power And Energy</a></li>
+                            <li><a href="sanitary-plumbing.html">Sanitary & Plumbing</a></li>
+                            <li><a href="electrical-power.html">Electrical Power</a></li>-->
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
@@ -110,30 +115,32 @@
                                 <ul class="sub-menu">
                                     <li><a href="Project_Execut.html">Proyectos Ejecutados</a></li>
                                     <li><a href="services_jjgole.html">Proyectos Destacados</a></li>
-                                    
+
                                     <!--<li><a href="portfolio.html">Proyectos Realizados</a></li>
-                                    <li><a href="project-single.html">Proyectos Destacados</a></li>
-                                    <li><a href="project-single.html">Project single</a></li>-->
+                            <li><a href="project-single.html">Proyectos Destacados</a></li>
+                            <li><a href="project-single.html">Project single</a></li>-->
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="Certificados.html">Certificaciones</a>
                                 <!--<ul class="sub-menu">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
-                                    <li><a href="blog-fullwidth.html">Blog full width</a></li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#Level3">Blog single</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog-single.html">Blog single</a></li>
-                                            <li><a href="blog-single-left-sidebar.html">Blog single left sidebar</a></li>
-                                            <li><a href="blog-single-fullwidth.html">Blog single full width</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>-->
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
+                            <li><a href="blog-fullwidth.html">Blog full width</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="#Level3">Blog single</a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog-single.html">Blog single</a></li>
+                                    <li><a href="blog-single-left-sidebar.html">Blog single left sidebar</a></li>
+                                    <li><a href="blog-single-fullwidth.html">Blog single full width</a></li>
+                                </ul>
                             </li>
+                        </ul>-->
+                            </li>
+                            <!--<li><a href="Bolsa_trabajo.html">Bolsa de Trabajo</a></li>-->
                             <li><a href="contact.html">Contacto</a></li>
-                            <li><a href="404.html">Bolsa de Trabajo</a></li>
+                            <li><a href="dowloads.html">Descargables</a>
+                            <li><a href="line-D.html">Linea de Denuncia</a></li>
                         </ul>
                     </div><!-- end of nav-collapse -->
 
@@ -144,33 +151,36 @@
                                     <div>
                                         <input type="text" class="form-control" placeholder="Buscar">
                                     </div>
-                                    <button type="submit" class="btn"><i class="ti-search"></i></button>
+                                    <button aria-label="Name" type="submit" class="btn"><i
+                                            class="ti-search"></i></button>
                                 </form>
                             </div>
                             <div>
-                                <button class="btn open-btn"><i class="ti-search"></i></button>
+                                <button aria-label="Name" class="btn open-btn"><i class="ti-search"></i></button>
                             </div>
                         </div>
-                       <!-- <div class="contact">
-                            <div class="call">
-                                <i class="fi flaticon-call"></i>
-                                <p>Call us anytime</p>
-                                <h5>+65487441584</h5>
-                            </div>
-                        </div>-->
+                        <!-- <div class="contact">
+                    <div class="call">
+                        <i class="fi flaticon-call"></i>
+                        <p>Call us anytime</p>
+                        <h5>+65487441584</h5>
+                    </div>
+                </div>-->
                     </div>
                 </div><!-- end of container -->
             </nav>
         </header>
         <!-- end of header -->
 
-
         <!-- start page-title -->
         <section class="page-title">
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
-                        <h2>Instalaciónes</h2>
+                        <div class="page-title-modern fadeindown ">
+                            <h2>Nuestras Instalaciónes</h2>
+                            <div class="title-line"></div>
+                        </div>
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
@@ -178,106 +188,189 @@
         <!-- end page-title -->
 
        
-        <!-- start shop-pg-section -->
-        <section class="shop-pg-section section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-xs-12">
-                        <div class="shop-grids">
-                            <div class="grid">
-                                <div class="img-cart">
-                                    <div class="img-holder">
-                                        <img src="img/Pro/img219.jpg" alt>
-                                    </div>
-                                    <div class="cart-details">
-                                        <ul>
-                                            <!--<li><a href="#"><i class="ti-shopping-cart"></i></a></li>
-                                            <li><a href="#"><i class="ti-fullscreen"></i></a></li>-->
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <h4><a href="#">Oficinas Generales</a></h4>
-                                    
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <div class="img-cart">
-                                    <div class="img-holder">
-                                        <img src="img/Pro/img89.jpg" alt>
-                                    </div>
-                                    <div class="cart-details">
-                                        <ul>
-                                            <!--<li><a href="#"><i class="ti-shopping-cart"></i></a></li>
-                                            <li><a href="#"><i class="ti-fullscreen"></i></a></li>-->
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <h4><a href="#">Taller de Pintura y Sanblasteo</a></h4>
-                                    
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <div class="img-cart">
-                                    <div class="img-holder">
-                                        <img src="img/Pro/img132.jpg" alt>
-                                    </div>
-                                    <div class="cart-details">
-                                        <ul>
-                                           <!-- <li><a href="#"><i class="ti-shopping-cart"></i></a></li>
-                                            <li><a href="#"><i class="ti-fullscreen"></i></a></li>-->
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <h4><a href="#">Taller de Fabricacion</a></h4>
-                                    
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <div class="img-cart">
-                                    <div class="img-holder">
-                                        <img src="img/Pro/img218.jpg" alt>
-                                    </div>
-                                    <div class="cart-details">
-                                        <ul>
-                                            <!--<li><a href="#"><i class="ti-shopping-cart"></i></a></li>
-                                            <li><a href="#"><i class="ti-fullscreen"></i></a></li>-->
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <h4><a href="#">Talleres Generales</a></h4>
-                                </div>
-                            </div>
-                         
-                           
+<!--==================================================
+                INSTALACIONES
+===================================================-->
+
+<section class="installations-section section-padding">
+
+    <div class="container">
+
+        <!-- Título -->
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="section-title-s2 wow fadeInDown">
+                    <p>
+
+                        Contamos con instalaciones equipadas para la fabricación,
+                        rehabilitación y mantenimiento de equipos industriales,
+                        cumpliendo con altos estándares de calidad, seguridad
+                        y productividad.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Tarjetas -->
+
+        <div class="row">
+
+            <!--========================
+                    OFICINAS
+            =========================-->
+
+            <div class="col-lg-6 col-md-6 wow fadeInUp">
+
+                <div class="gallery-card">
+
+                    <div class="gallery-image">
+
+                        <img src="img/Pro/img219.jpg" alt="Oficinas">
+
+                        <div class="gallery-overlay">
+
+                            <i class="ti-search"></i>
+
+                            <h3>Oficinas Generales</h3>
+
+                            <span>Fotografías</span>
+
+                            <button
+                                class="gallery-btn"
+                                onclick="openGallery('oficinas')">
+
+                                Explorar Galería
+
+                            </button>
+
                         </div>
-                        <!--<div class="pagination-wrapper pagination-wrapper-left">
-                            <ul class="pg-pagination">
-                                <li>
-                                    <a href="#" aria-label="Previous">
-                                        <i class="fi flaticon-back"></i>
-                                    </a>
-                                </li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <i class="fi flaticon-next"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>-->
 
                     </div>
-                </div>
-            </div> <!-- end container -->
-        </section>
-        <!-- end shop-pg-section -->
 
+                    <div class="gallery-content">
+
+                        <h3>Oficinas Generales</h3>
+
+                        <p>
+
+                            Dirección General,
+                            Ingeniería,
+                            Compras,
+                            Recursos Humanos,
+                            Calidad y Administración.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--========================
+                    PRODUCCIÓN
+            =========================-->
+
+            <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+
+                <div class="gallery-card">
+
+                    <div class="gallery-image">
+
+                        <img src="img/Pro/img89.jpg" alt="Producción">
+
+                        <div class="gallery-overlay">
+
+                            <i class="ti-search"></i>
+
+                            <h3>Producción</h3>
+
+                            <span>Fotografías</span>
+
+                            <button
+                                class="gallery-btn"
+                                onclick="openGallery('produccion')">
+
+                                Explorar Galería
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-content">
+
+
+                        <h3>Área de Producción</h3>
+
+                        <p>
+
+                            Fabricación,
+                            Soldadura,
+                            Armado,
+                            Maquinado y
+                            Ensamble Industrial.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                MODAL GALERÍA
+===================================================-->
+<!--==================================================
+                MODAL GALERÍA
+===================================================-->
+
+<div id="galleryModal" class="gallery-modal">
+
+    <span class="gallery-close" onclick="closeGallery()">
+        &times;
+    </span>
+
+
+    <div class="gallery-box">
+
+
+        <button class="gallery-prev" onclick="prevImage()">
+            ❮
+        </button>
+
+
+        <img id="galleryImage" src="">
+
+
+        <button class="gallery-next" onclick="nextImage()">
+            ❯
+        </button>
+
+
+        <div id="galleryCounter">
+            1 / 7
+        </div>
+
+
+    </div>
+
+</div>
 
         <!-- start cta-section 
         <section class="cta-section">
@@ -309,6 +402,9 @@
         <!-- end cta-section -->
 
 
+
+
+
           <!-- start site-footer -->
           <footer class="site-footer">
             <div class="upper-footer">
@@ -317,7 +413,7 @@
                         <div class="col col-lg-3 col-md-3 col-sm-6">
                             <div class="widget about-widget">
                                 <div class="logo widget-title">
-                                    <img src="img/logotipoHP.png" alt>
+                                    <img src="img/LOGO/LOGS3.png" alt class="img-rounded">
                                 </div>
                                 <p></p>
                                 <div class="social-icons">
@@ -410,7 +506,7 @@
                         <div class="col col-xs-12 col-md-10">
                             <!--<p class="copyright"><a href="templateshub.net">Templates Hub</a></p>-->
                             <div class="extra-link center-block">
-                                <ul><li>| JJ GOLE S.A. de C.V. - Copyright &copy; - 2025 |</li>
+                                <ul><li>| JJ GOLE S.A. de C.V. - Copyright &copy; - 2026 |</li>
                                    <li><a href="aviso_priv.html">|Aviso de Privacidad|</a></li>
                                    <li>|Derechos reservados, JJ GOLE S.A. de C.V.|</li>
                                     <!-- <li><a href="#">Privace & Policy</a></li>
