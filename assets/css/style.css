@@ -10488,22 +10488,75 @@ text-align:justify;
     background:rgba(0,0,0,.85);
 }
 
+.cerrar{
+    position:absolute;
+    top:15px;
+    right:20px;
+    width:40px;
+    height:40px;
+    background:#f57c00;
+    color:#fff;
+    font-size:28px;
+    font-weight:bold;
+    text-align:center;
+    line-height:40px;
+    border-radius:50%;
+    cursor:pointer;
+    transition:.3s;
+    z-index:99999;
+}
+
+.cerrar:hover{
+    background:#d96a00;
+    transform:rotate(90deg);
+}
+
+.pdf-modal{
+    display:none;
+    position:fixed;
+    z-index:99999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.85);
+}
+
+#cerrarPDF{
+    position:absolute;
+    top:15px;
+    right:20px;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#f57c00;
+    color:#fff;
+    font-size:30px;
+    font-weight:bold;
+    text-align:center;
+    line-height:45px;
+    cursor:pointer;
+    z-index:999999;
+    transition:.3s;
+}
+
+#cerrarPDF:hover{
+    background:#d86c00;
+    transform:rotate(90deg);
+}
+
 .pdf-content{
-    width:90%;
-    height:90%;
-    margin:2% auto;
+    position:relative;
+    width:95%;
+    height:92vh;
+    margin:2vh auto;
     background:#fff;
     border-radius:10px;
     overflow:hidden;
-    position:relative;
 }
 
-.cerrar{
-    position:absolute;
-    right:20px;
-    top:10px;
-    font-size:35px;
-    cursor:pointer;
-    color:#333;
-    z-index:10;
+#visorPDF{
+    width:100%;
+    height:100%;
+    border:none;
 }

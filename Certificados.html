@@ -275,7 +275,8 @@
                                                 class="img-responsive img-rounded center-block" alt="ISO 9001">
 
                                             <div class="overlay">
-                                                <a href="img/prod/iso90011.png" target="_blank" class="btn-certificado">
+                                                <a href="#" class="btn-certificado"
+                                                    onclick="abrirPDF('documents/CERTIFICADOS/CERTIFICADOISO900-JJGOLESADECV.pdf'); return false;">
                                                     Ver certificado
                                                 </a>
                                             </div>
@@ -301,9 +302,9 @@
                                             <img src="img/prod/ISO140012.png"
                                                 class="img-responsive img-rounded center-block" alt="ISO 14001">
 
-                                            <div class="overlay">
-                                                <a href="img/prod/ISO140012.png" target="_blank"
-                                                    class="btn-certificado">
+                                           <div class="overlay">
+                                                <a href="#" class="btn-certificado"
+                                                    onclick="abrirPDF('documents/CERTIFICADOS/CERTIFICADOISO14001-JJGOLESADECV.pdf'); return false;">
                                                     Ver certificado
                                                 </a>
                                             </div>
@@ -337,8 +338,8 @@
                                                 class="img-responsive img-rounded center-block" alt="ISO 45001">
 
                                             <div class="overlay">
-                                                <a href="img/prod/ISO450011.png" target="_blank"
-                                                    class="btn-certificado">
+                                                <a href="#" class="btn-certificado"
+                                                    onclick="abrirPDF('documents/CERTIFICADOS/CERTIFICADOISO45001-JJGOLESADECV.pdf'); return false;">
                                                     Ver certificado
                                                 </a>
                                             </div>
@@ -415,9 +416,9 @@
                                             <img src="img/R.png"
                                                 class="img-responsive img-rounded center-block certificado-img"
                                                 alt="National Board R">
-
                                             <div class="overlay">
-                                                <a href="img/R.png" target="_blank" class="btn-certificado">
+                                                <a href="#" class="btn-certificado"
+                                                    onclick="abrirPDF('documents/CERTIFICADOS/CERTIFICADONATIONALBOARDR.pdf'); return false;">
                                                     Ver certificado
                                                 </a>
                                             </div>
@@ -455,10 +456,13 @@
                                                 alt="ASME S">
 
                                             <div class="overlay">
-                                                <a href="img/S.png" target="_blank" class="btn-certificado">
+                                                <a href="#" class="btn-certificado"
+                                                    onclick="abrirPDF('documents/CERTIFICADOS/CERTIFICADOASMES.pdf'); return false;">
                                                     Ver certificado
                                                 </a>
                                             </div>
+
+
 
                                         </div>
 
@@ -482,7 +486,8 @@
                                                 alt="ASME U">
 
                                             <div class="overlay">
-                                                <a href="img/U.png" target="_blank" class="btn-certificado">
+                                                <a href="#" class="btn-certificado"
+                                                    onclick="abrirPDF('documents/CERTIFICADOS/CERTIFICADOASMEU.pdf'); return false;">
                                                     Ver certificado
                                                 </a>
                                             </div>
@@ -515,17 +520,18 @@
                                                 class="img-responsive img-rounded center-block certificado-img"
                                                 alt="ASME U2">
 
+                                            <div class="overlay">
+                                                <a href="#" class="btn-certificado"
+                                                    onclick="abrirPDF('documents/CERTIFICADOS/CERTIFICADOASMEU2.pdf'); return false;">
+                                                    Ver certificado
+                                                </a>
+                                            </div>
                                             <!--    <div class="overlay">
                                                 <a href="img/U2.png" target="_blank" class="btn-certificado">
                                                     Ver certificado
                                                 </a>
                                             </div> -->
-                                            <div class="overlay">
-                                                <a href="#" class="btn-certificado"
-                                                    onclick="abrirPDF('documents/CERTIFICADOS/U.pdf'); return false;">
-                                                    Ver certificado
-                                                </a>
-                                            </div>
+
 
                                         </div>
 
@@ -660,7 +666,31 @@
             </div> <!-- end container -->
         </section>
         <!-- end blog-single-section -->
+        <!-- ==============================
+        VISOR PDF
+================================ -->
 
+
+        <div id="visorPDF" class="visor-pdf">
+
+
+            <div class="visor-contenido">
+
+
+                <span class="cerrar" onclick="cerrarPDF()">
+                    &times;
+                </span>
+
+
+
+                <iframe id="pdfFrame"></iframe>
+
+
+
+            </div>
+
+
+        </div>
 
         <!-- start cta-section 
         <section class="cta-section">
@@ -833,56 +863,57 @@
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
 
+
+
+    <!-- Custom script for this template -->
+    <script src="assets/js/script.js"></script>
+
     <script>
-        function abrirPDF(pdf) {
 
-            document.getElementById("pdfModal").style.display = "block";
+        function mostrarPDF(id) {
 
-            document.getElementById("visorPDF").src =
-                pdf + "#toolbar=0&navpanes=0&scrollbar=0";
+            document.getElementById(id).style.display = "block";
 
         }
 
-        document.querySelector(".cerrar").onclick = function () {
 
-            document.getElementById("pdfModal").style.display = "none";
+        function cerrarPDF(id) {
 
-            document.getElementById("visorPDF").src = "";
-
-        }
-
-        window.onclick = function (e) {
-
-            if (e.target == document.getElementById("pdfModal")) {
-
-                document.getElementById("pdfModal").style.display = "none";
-
-                document.getElementById("visorPDF").src = "";
-
-            }
+            document.getElementById(id).style.display = "none";
 
         }
 
-        document.getElementById("visorPDF").addEventListener("contextmenu", function (e) {
-            e.preventDefault();
-        });
     </script>
 
 
 
+    <script>
 
-    <div id="pdfModal" class="pdf-modal">
 
-        <div class="pdf-content">
+        function abrirPDF(ruta) {
 
-            <span class="cerrar">&times;</span>
+            document.getElementById("visorPDF").style.display = "block";
 
-            <iframe id="visorPDF" width="100%" height="700" frameborder="0">
-            </iframe>
+            document.getElementById("pdfFrame").src =
+                ruta + "#toolbar=0&navpanes=0&scrollbar=0&zoom=page-width";
 
-        </div>
+        }
 
-    </div>
+
+
+        function cerrarPDF() {
+
+
+            document.getElementById("visorPDF").style.display = "none";
+
+
+            document.getElementById("pdfFrame").src = "";
+
+
+        }
+
+    </script>
+
 </body>
 
 <!-- dustech/blog-single-fullwidth.html  13 Nov 2019 12:56:20 GMT -->
