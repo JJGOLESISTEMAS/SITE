@@ -10560,3 +10560,109 @@ text-align:justify;
     height:100%;
     border:none;
 }
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.titulo-animado{
+    display:inline-block;
+    font-size:48px;
+    font-weight:800;
+    text-transform:uppercase;
+    color:#ff6a00;
+    letter-spacing:3px;
+    position:relative;
+    animation: fadeUp 1s ease-out;
+}
+
+/* Línea animada debajo */
+.titulo-animado::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:-12px;
+    transform:translateX(-50%);
+    width:0;
+    height:4px;
+    background:#ff6a00;
+    border-radius:10px;
+    animation: lineGrow 1.2s ease forwards;
+    animation-delay:.4s;
+}
+
+/* Destello al pasar el mouse */
+.titulo-animado:hover{
+    text-shadow:
+        0 0 10px rgba(255,106,0,.8),
+        0 0 20px rgba(255,106,0,.6);
+    transform:scale(1.05);
+    transition:.3s;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(35px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes lineGrow{
+    from{
+        width:0;
+    }
+    to{
+        width:120px;
+    }
+}
+
+/* ==========================
+   VIDEO CORPORATIVO
+========================== */
+
+.video-hero{
+    width:100%;
+    padding:70px 0;
+    text-align:center;
+    background:#fff;
+}
+
+.video-wrapper{
+    width:80%;
+    max-width:900px;   /* Ajusta el tamaño máximo */
+    margin:0 auto;
+}
+
+.video-wrapper video{
+    width:100%;
+    display:block;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
