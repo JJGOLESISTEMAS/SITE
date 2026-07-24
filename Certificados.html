@@ -262,7 +262,8 @@
 
                                         <a href="https://www.iso.org/obp/ui/#iso:std:iso:9001:ed-5:v1:es"
                                             target="_blank">
-                                            <span class="post-control-link"><b>Certificación ISO 9001:2015</b></span><br>
+                                            <span class="post-control-link"><b>Certificación ISO
+                                                    9001:2015</b></span><br>
                                             <span class="post-name">Sistema de Gestión de Calidad</span>
                                         </a>
 
@@ -288,7 +289,8 @@
 
                                         <a href="https://www.iso.org/obp/ui/#iso:std:iso:14001:ed-3:v1:es"
                                             target="_blank">
-                                            <span class="post-control-link"><b>Certificación ISO 14001:2015</b></span><br>
+                                            <span class="post-control-link"><b>Certificación ISO
+                                                    14001:2015</b></span><br>
                                             <span class="post-name">Sistema de Gestión Ambiental</span>
                                         </a>
 
@@ -321,8 +323,10 @@
 
                                         <a href="https://www.iso.org/obp/ui/#iso:std:iso:45001:ed-1:v1:es"
                                             target="_blank">
-                                            <span class="post-control-link"><b>Certificación ISO 45001:2018</b></span><br>
-                                            <span class="post-name">Sistema de Gestión de Seguridad y Salud en el Trabajo</span>
+                                            <span class="post-control-link"><b>Certificación ISO
+                                                    45001:2018</b></span><br>
+                                            <span class="post-name">Sistema de Gestión de Seguridad y Salud en el
+                                                Trabajo</span>
                                         </a>
 
                                         <br><br>
@@ -438,7 +442,8 @@
 
                                         <a href="https://www.asme.org/" target="_blank">
                                             <span class="post-control-link"><b>SELLO "S"</b></span><br>
-                                            <span class="post-name">Diseño, fabricación, pruebas y reparación de tanques y recipientes a presión. (Clase U2)</span>
+                                            <span class="post-name">Diseño, fabricación, pruebas y reparación de tanques
+                                                y recipientes a presión. (Clase U2)</span>
                                         </a>
 
                                         <br><br>
@@ -464,7 +469,8 @@
 
                                         <a href="https://www.asme.org/" target="_blank">
                                             <span class="post-control-link"><b>SELLO "U"</b></span><br>
-                                            <span class="post-name">Diseño, fabricación y pruebas de tanques y recipientes a presión.</span>
+                                            <span class="post-name">Diseño, fabricación y pruebas de tanques y
+                                                recipientes a presión.</span>
                                         </a>
 
                                         <br><br>
@@ -497,7 +503,8 @@
 
                                         <a href="https://www.asme.org/" target="_blank">
                                             <span class="post-control-link"><b>SELLO "U2"</b></span><br>
-                                            <span class="post-name">construcción y reparación de calderas de potencia.</span>
+                                            <span class="post-name">construcción y reparación de calderas de
+                                                potencia.</span>
                                         </a>
 
                                         <br><br>
@@ -508,8 +515,14 @@
                                                 class="img-responsive img-rounded center-block certificado-img"
                                                 alt="ASME U2">
 
-                                            <div class="overlay">
+                                            <!--    <div class="overlay">
                                                 <a href="img/U2.png" target="_blank" class="btn-certificado">
+                                                    Ver certificado
+                                                </a>
+                                            </div> -->
+                                            <div class="overlay">
+                                                <a href="#" class="btn-certificado"
+                                                    onclick="abrirPDF('documents/CERTIFICADOS/U.pdf'); return false;">
                                                     Ver certificado
                                                 </a>
                                             </div>
@@ -819,6 +832,57 @@
 
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
+
+    <script>
+        function abrirPDF(pdf) {
+
+            document.getElementById("pdfModal").style.display = "block";
+
+            document.getElementById("visorPDF").src =
+                pdf + "#toolbar=0&navpanes=0&scrollbar=0";
+
+        }
+
+        document.querySelector(".cerrar").onclick = function () {
+
+            document.getElementById("pdfModal").style.display = "none";
+
+            document.getElementById("visorPDF").src = "";
+
+        }
+
+        window.onclick = function (e) {
+
+            if (e.target == document.getElementById("pdfModal")) {
+
+                document.getElementById("pdfModal").style.display = "none";
+
+                document.getElementById("visorPDF").src = "";
+
+            }
+
+        }
+
+        document.getElementById("visorPDF").addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+    </script>
+
+
+
+
+    <div id="pdfModal" class="pdf-modal">
+
+        <div class="pdf-content">
+
+            <span class="cerrar">&times;</span>
+
+            <iframe id="visorPDF" width="100%" height="700" frameborder="0">
+            </iframe>
+
+        </div>
+
+    </div>
 </body>
 
 <!-- dustech/blog-single-fullwidth.html  13 Nov 2019 12:56:20 GMT -->

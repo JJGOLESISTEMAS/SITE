@@ -10474,3 +10474,36 @@ text-align:justify;
     transform: scale(1.08);
     filter: brightness(1.15);
 }
+
+
+/*PDF CERTIFICADOS*/
+.pdf-modal{
+    display:none;
+    position:fixed;
+    z-index:9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.85);
+}
+
+.pdf-content{
+    width:90%;
+    height:90%;
+    margin:2% auto;
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    position:relative;
+}
+
+.cerrar{
+    position:absolute;
+    right:20px;
+    top:10px;
+    font-size:35px;
+    cursor:pointer;
+    color:#333;
+    z-index:10;
+}
