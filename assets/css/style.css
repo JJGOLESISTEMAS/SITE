@@ -5062,7 +5062,7 @@ img {
   margin-top: 8px;
 }
 
-.contact-map-section .contact-map {
+/*.contact-map-section .contact-map {
   height: 550px;
 }
 
@@ -5071,7 +5071,7 @@ img {
   height: 100%;
   border: 0;
   outline: 0;
-}
+}*/
 
 /*--------------------------------------------------------------
 	#service single page
@@ -12325,3 +12325,911 @@ left:0 !important;
     transform:translateY(-2px);
 }
 
+
+
+/* Contenedor */
+.contact-map-section .contact-map{
+    width:100%;
+    height:550px;
+    overflow:hidden;
+    display:block;
+    line-height:0;      /* Elimina espacios debajo del iframe */
+    background:#fff;
+    border-radius:20px; /* Opcional */
+}
+
+/* Iframe */
+.contact-map-section iframe{
+    display:block;      /* Evita el espacio inferior de elementos inline */
+    width:100%;
+    height:100%;
+    border:0;
+    outline:0;
+}
+
+
+.contact-location{
+
+    padding:100px 0;
+
+    background:#f7f8fa;
+
+}
+
+.location-box{
+
+    display:flex;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+.location-info{
+
+    flex:1;
+
+}
+
+.location-info .subtitle{
+
+    color:#ff6b00;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.location-info h2{
+
+    font-size:42px;
+
+    margin:15px 0;
+
+}
+
+.location-info p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.location-info ul{
+
+    margin:30px 0;
+
+    padding:0;
+
+}
+
+.location-info li{
+
+    list-style:none;
+
+    margin-bottom:15px;
+
+    font-size:17px;
+
+}
+
+.location-map{
+
+    flex:1.5;
+
+    height:500px;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.15);
+
+}
+
+.location-map iframe{
+
+    width:100%;
+
+    height:100%;
+
+    border:0;
+
+}
+
+@media(max-width:991px){
+
+.location-box{
+
+flex-direction:column;
+
+}
+
+.location-map{
+
+width:100%;
+
+}
+
+}
+
+
+.contact-location{
+
+    padding:80px 0;
+
+}
+
+.location-map{
+
+    height:100%;
+
+    min-height:520px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.location-map iframe{
+
+    width:100%;
+
+    height:100%;
+
+    border:0;
+
+}
+
+.office-card{
+
+    height:100%;
+
+}
+
+.contact-pg-section .row.align-items-stretch{
+    display:flex;
+    align-items:stretch;
+}
+
+#form{
+    width:100%;
+    height:100%;
+    padding:35px;
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 12px 35px rgba(0,0,0,.10);
+}
+
+.contact-offices{
+    width:100%;
+    display:flex;
+}
+
+.office-card{
+    width:100%;
+    height:100%;
+    padding:35px;
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+/* =========================================================
+   MAPA DE PROYECTOS JJ GOLE
+========================================================= */
+
+.projects-map-section {
+
+    padding: 100px 0;
+
+    background: #ffffff;
+
+}
+
+
+/* ENCABEZADO */
+
+.projects-map-header {
+
+    max-width: 750px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+
+}
+
+.projects-map-subtitle {
+
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #d46e0e;
+
+}
+
+.projects-map-header h2 {
+
+    margin: 0 0 15px;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    color: #333333;
+
+}
+
+.projects-map-header p {
+
+    margin: 0;
+
+    color: #777777;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.projects-map-wrapper {
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) 330px;
+
+    gap: 30px;
+
+    align-items: stretch;
+
+}
+
+
+/* MAPA */
+
+.projects-map-container {
+
+    position: relative;
+
+    min-height: 650px;
+
+    overflow: hidden;
+
+    background: #f7f7f7;
+
+    border-radius: 18px;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+
+}
+
+
+/* Leaflet */
+
+#jjgole-project-map {
+
+    width: 100%;
+
+    height: 650px;
+
+    background: #f7f7f7;
+
+}
+
+
+/* Quitar controles innecesarios */
+
+.leaflet-control-zoom {
+
+    border: none !important;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.12) !important;
+
+}
+
+.leaflet-control-zoom a {
+
+    color: #555 !important;
+
+    background: #ffffff !important;
+
+    border: none !important;
+
+}
+
+.leaflet-control-zoom a:hover {
+
+    color: #d46e0e !important;
+
+}
+
+
+/* TOOLTIP DE ESTADOS */
+
+.jjgole-state-tooltip {
+
+    background: #333333;
+
+    border: none;
+
+    border-radius: 5px;
+
+    color: #ffffff;
+
+    padding: 7px 10px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.jjgole-state-tooltip:before {
+
+    border-top-color: #333333;
+
+}
+
+
+/* MARKER */
+
+.jjgole-project-marker {
+
+    width: 18px;
+
+    height: 18px;
+
+    background: #d46e0e;
+
+    border: 3px solid #ffffff;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 5px rgba(212,110,14,.18),
+        0 5px 12px rgba(0,0,0,.25);
+
+    transition: all .3s ease;
+
+}
+
+.jjgole-project-marker:hover {
+
+    transform: scale(1.25);
+
+}
+
+
+/* EFECTO PULSO */
+
+.jjgole-project-marker::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: rgba(212,110,14,.25);
+
+    transform: translate(-50%, -50%);
+
+    animation: jjgolePulse 2s infinite;
+
+}
+
+@keyframes jjgolePulse {
+
+    0% {
+
+        transform: translate(-50%, -50%) scale(.8);
+
+        opacity: .8;
+
+    }
+
+    70% {
+
+        transform: translate(-50%, -50%) scale(2);
+
+        opacity: 0;
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* POPUP */
+
+.leaflet-popup-content-wrapper {
+
+    border-radius: 12px;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,.18);
+
+}
+
+.leaflet-popup-content {
+
+    margin: 18px;
+
+}
+
+.jjgole-popup {
+
+    min-width: 230px;
+
+}
+
+.jjgole-popup-number {
+
+    color: #d46e0e;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+.jjgole-popup h3 {
+
+    margin: 5px 0 3px;
+
+    font-size: 18px;
+
+    color: #333333;
+
+}
+
+.jjgole-popup .popup-state {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #777777;
+
+    font-size: 13px;
+
+}
+
+.jjgole-popup p {
+
+    margin: 0;
+
+    color: #555555;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+}
+
+.jjgole-popup .popup-line {
+
+    margin-top: 12px;
+
+    padding-top: 10px;
+
+    border-top: 1px solid #eeeeee;
+
+    color: #d46e0e;
+
+    font-weight: 600;
+
+}
+
+
+/* LEYENDA */
+
+.projects-map-legend {
+
+    position: absolute;
+
+    left: 20px;
+
+    bottom: 20px;
+
+    z-index: 500;
+
+    padding: 15px 18px;
+
+    background: rgba(255,255,255,.96);
+
+    border-radius: 10px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.12);
+
+}
+
+.legend-title {
+
+    margin-bottom: 10px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #333333;
+
+}
+
+.legend-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 7px;
+
+    color: #666666;
+
+    font-size: 12px;
+
+}
+
+.legend-dot {
+
+    width: 11px;
+
+    height: 11px;
+
+    border-radius: 50%;
+
+    background: #d46e0e;
+
+}
+
+.legend-state {
+
+    width: 15px;
+
+    height: 11px;
+
+    border-radius: 2px;
+
+    background: #dddddd;
+
+}
+
+
+/* LISTA */
+
+.projects-map-list {
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 18px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.07);
+
+}
+
+
+/* ENCABEZADO LISTA */
+
+.projects-list-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding-bottom: 20px;
+
+    margin-bottom: 5px;
+
+    border-bottom: 1px solid #eeeeee;
+
+}
+
+.projects-list-header > span {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: #d46e0e;
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+}
+
+.projects-list-header strong {
+
+    display: block;
+
+    color: #333333;
+
+    font-size: 16px;
+
+}
+
+.projects-list-header small {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color: #999999;
+
+    font-size: 12px;
+
+}
+
+
+/* ITEM */
+
+.project-list-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 16px 8px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    cursor: pointer;
+
+    transition: all .25s ease;
+
+}
+
+.project-list-item:last-child {
+
+    border-bottom: none;
+
+}
+
+.project-list-item:hover {
+
+    padding-left: 15px;
+
+    background: #fafafa;
+
+}
+
+.project-list-item.active {
+
+    background: #fff7f0;
+
+    border-radius: 8px;
+
+}
+
+.project-number {
+
+    color: #d46e0e;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+.project-list-item strong {
+
+    display: block;
+
+    color: #444444;
+
+    font-size: 14px;
+
+}
+
+.project-list-item small {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color: #999999;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .projects-map-wrapper {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .projects-map-list {
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 0 15px;
+
+    }
+
+    .projects-list-header {
+
+        grid-column: 1 / -1;
+
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .projects-map-section {
+
+        padding: 70px 15px;
+
+    }
+
+    .projects-map-header h2 {
+
+        font-size: 30px;
+
+    }
+
+    .projects-map-header p {
+
+        font-size: 14px;
+
+    }
+
+    .projects-map-container {
+
+        min-height: 480px;
+
+    }
+
+    #jjgole-project-map {
+
+        height: 480px;
+
+    }
+
+    .projects-map-list {
+
+        display: block;
+
+    }
+
+    .projects-map-legend {
+
+        left: 12px;
+
+        bottom: 12px;
+
+    }
+
+}
+
+.factory-marker {
+
+    width: 26px;
+
+    height: 26px;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.22);
+
+    border: 2px solid #d46e0e;
+
+    cursor: pointer;
+
+    transition: all .25s ease;
+
+}
+
+.jjgole-factory-icon {
+    background: transparent;
+    border: none;
+}
+
+
+
+.factory-marker svg {
+    width: 19px;
+    height: 19px;
+    display: block;
+}
+
+.factory-marker:hover {
+    transform: scale(1.25);
+    box-shadow: 0 4px 9px rgba(212,110,14,.35);
+}
+
+.legend-dot.project {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #e87500;
+    display: inline-block;
+    margin-right: 9px;
+}
+
+.legend-icon.project {
+    color: #e87500;
+    font-size: 15px;
+    width: 14px;
+    margin-right: 9px;
+    text-align: center;
+}

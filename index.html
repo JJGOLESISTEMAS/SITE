@@ -38,6 +38,10 @@
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -788,7 +792,173 @@
             </div>
         </section>-->
         <!-- end featured-project-section-s2 -->
+<!-- =========================================
+     MAPA DE PROYECTOS JJ GOLE
+========================================= -->
 
+<section class="projects-map-section">
+
+    <div class="container">
+
+        <div class="projects-map-header">
+
+            <span class="projects-map-subtitle">
+                NUESTRA EXPERIENCIA
+            </span>
+
+            <h2>
+                Proyectos realizados en México
+            </h2>
+
+            <p>
+                Presencia de JJ GOLE S.A. DE C.V. en diferentes regiones del país,
+                participando en proyectos de infraestructura industrial.
+            </p>
+
+        </div>
+
+
+        <div class="projects-map-wrapper">
+
+            <!-- MAPA -->
+            <div class="projects-map-container">
+
+                <div id="jjgole-project-map"></div>
+
+                <!-- Leyenda -->
+                <div class="projects-map-legend">
+
+                    <div class="legend-title">
+                        PROYECTOS JJ GOLE S.A. DE C.V.
+                    </div>
+
+                    <div class="legend-item">
+                        <span class="legend-dot"></span>
+                        <span>Ubicaciónes de Proyectos Realizados</span>
+                    </div>
+
+                    <div class="legend-item">
+                        <span class="legend-state"></span>
+                        <span>Estado</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- LISTA DE PROYECTOS -->
+            <div class="projects-map-list">
+
+                <div class="projects-list-header">
+
+                    <span>7</span>
+
+                    <div>
+                        <strong>Ubicaciones</strong>
+                        <small>Proyectos en México</small>
+                    </div>
+
+                </div>
+
+
+                <div class="project-list-item"
+                     data-project="tula">
+
+                    <span class="project-number">01</span>
+
+                    <div>
+                        <strong>Tula de Allende</strong>
+                        <small>Hidalgo</small>
+                    </div>
+
+                </div>
+
+
+                <div class="project-list-item"
+                     data-project="salina-cruz">
+
+                    <span class="project-number">02</span>
+
+                    <div>
+                        <strong>Salina Cruz</strong>
+                        <small>Oaxaca</small>
+                    </div>
+
+                </div>
+
+
+                <div class="project-list-item"
+                     data-project="madero">
+
+                    <span class="project-number">03</span>
+
+                    <div>
+                        <strong>Ciudad Madero</strong>
+                        <small>Tamaulipas</small>
+                    </div>
+
+                </div>
+
+
+                <div class="project-list-item"
+                     data-project="lazaro-cardenas">
+
+                    <span class="project-number">04</span>
+
+                    <div>
+                        <strong>Lázaro Cárdenas</strong>
+                        <small>Michoacán</small>
+                    </div>
+
+                </div>
+
+
+                <div class="project-list-item"
+                     data-project="minatitlan">
+
+                    <span class="project-number">05</span>
+
+                    <div>
+                        <strong>Minatitlán</strong>
+                        <small>Veracruz</small>
+                    </div>
+
+                </div>
+
+
+                <div class="project-list-item"
+                     data-project="el-salto">
+
+                    <span class="project-number">06</span>
+
+                    <div>
+                        <strong>El Salto</strong>
+                        <small>Jalisco</small>
+                    </div>
+
+                </div>
+
+
+                <div class="project-list-item"
+                     data-project="cadereyta">
+
+                    <span class="project-number">07</span>
+
+                    <div>
+                        <strong>Cadereyta de Jiménez</strong>
+                        <small>Nuevo León</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
         <!-- start partners-section -->
         <section class="partners-section">
@@ -1506,6 +1676,569 @@
             document.getElementById('overlay').style.display = 'none';
         }
     </script>
+
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* =====================================================
+       MAPA
+    ===================================================== */
+
+    const map = L.map("jjgole-project-map", {
+
+        zoomControl: true,
+
+        attributionControl: false,
+
+        dragging: true,
+
+        scrollWheelZoom: false,
+
+        doubleClickZoom: true,
+
+        boxZoom: true,
+
+        keyboard: true
+
+    });
+
+
+    /* =====================================================
+       PROYECTOS JJ GOLE
+    ===================================================== */
+
+    const projects = [
+
+        {
+            id: "tula",
+
+            number: "01",
+
+            city: "Tula de Allende",
+
+            state: "Hidalgo",
+
+            project: "Refinería de Tula de Allende - PEMEX REFINACION",
+
+            lat: 20.0515,
+
+            lng: -99.2675
+        },
+
+        {
+            id: "salina-cruz",
+
+            number: "02",
+
+            city: "Salina Cruz",
+
+            state: "Oaxaca",
+
+            project: "Refinería de Salina Cruz - PEMEX REFINACION",
+
+            lat: 16.1675,
+
+            lng: -95.1968
+        },
+
+        {
+            id: "madero",
+
+            number: "03",
+
+            city: "Ciudad Madero",
+
+            state: "Tamaulipas",
+
+            project: "Refinería de Ciudad Madero - PEMEX REFINACION",
+
+            lat: 22.2451,
+
+            lng: -97.8360
+        },
+
+        {
+            id: "lazaro-cardenas",
+
+            number: "04",
+
+            city: "Lázaro Cárdenas",
+
+            state: "Michoacán",
+
+            project: "Complejo Productor y Comercializador de Fertilizantes, S.A. de C.V. Grupo Fertinal",
+
+            lat: 17.9587,
+
+            lng: -102.1940
+        },
+
+        {
+            id: "minatitlan",
+
+            number: "05",
+
+            city: "Minatitlán",
+
+            state: "Veracruz",
+
+            project: "Refinería de Minatitlán - PEMEX REFINACION",
+
+            lat: 17.9833,
+
+            lng: -94.5500
+        },
+
+        {
+            id: "el-salto",
+
+            number: "06",
+
+            city: "El Salto",
+
+            state: "Jalisco",
+
+            project: "T.A.R. (TERMINAL DE ALMACENAMIENTO Y REPARTO) El Castillo",
+
+            lat: 20.5220,
+
+            lng: -103.1810
+        },
+
+        {
+            id: "cadereyta",
+
+            number: "07",
+
+            city: "Cadereyta de Jiménez",
+
+            state: "Nuevo León",
+
+            project: "Refinería de Cadereyta - PEMEX REFINACION",
+
+            lat: 25.5908,
+
+            lng: -100.0008
+        }
+
+    ];
+
+
+    /* =====================================================
+       ESTADOS CON PROYECTOS
+    ===================================================== */
+
+    const projectStates = [
+
+        "Hidalgo",
+
+        "Oaxaca",
+
+        "Tamaulipas",
+
+        "Michoacán",
+
+        "Veracruz",
+
+        "Jalisco",
+
+        "Nuevo León"
+
+    ];
+
+
+    /* =====================================================
+       ESTILO DEL MAPA
+    ===================================================== */
+
+    function stateStyle(feature) {
+
+        const stateName =
+            feature.properties.name ||
+            feature.properties.NOMGEO ||
+            feature.properties.ENTIDAD ||
+            "";
+
+        const hasProject =
+            projectStates.includes(stateName);
+
+        return {
+
+            fillColor: hasProject
+                ? "#d46e0e"
+                : "#dddddd",
+
+            fillOpacity: hasProject
+                ? 0.88
+                : 0.85,
+
+            color: "#ffffff",
+
+            weight: 1.2,
+
+            opacity: 1
+
+        };
+
+    }
+
+
+    /* =====================================================
+       GEOJSON
+    ===================================================== */
+
+    let mexicoLayer;
+
+
+    fetch(
+        "https://raw.githubusercontent.com/angelnmara/geojson/master/mexicoHigh.json"
+    )
+
+    .then(response => {
+
+        if (!response.ok) {
+
+            throw new Error(
+                "No se pudo cargar el mapa de México."
+            );
+
+        }
+
+        return response.json();
+
+    })
+
+    .then(data => {
+
+        mexicoLayer = L.geoJSON(
+
+            data,
+
+            {
+
+                style: stateStyle,
+
+                onEachFeature: function (feature, layer) {
+
+                    const stateName =
+                        feature.properties.name ||
+                        feature.properties.NOMGEO ||
+                        feature.properties.ENTIDAD ||
+                        "Estado";
+
+
+                    layer.bindTooltip(
+
+                        stateName,
+
+                        {
+
+                            sticky: true,
+
+                            className:
+                                "jjgole-state-tooltip",
+
+                            direction: "top"
+
+                        }
+
+                    );
+
+
+                    layer.on({
+
+                        mouseover: function () {
+
+                            this.setStyle({
+
+                                weight: 2,
+
+                                color: "#ffffff",
+
+                                fillOpacity: .98
+
+                            });
+
+                        },
+
+
+                        mouseout: function () {
+
+                            mexicoLayer.resetStyle(this);
+
+                        },
+
+
+                        click: function () {
+
+                            map.fitBounds(
+                                this.getBounds(),
+                                {
+                                    padding: [30, 30],
+
+                                    maxZoom: 6
+                                }
+                            );
+
+                        }
+
+                    });
+
+                }
+
+            }
+
+        ).addTo(map);
+
+
+        /* Ajustar mapa a México */
+
+        map.fitBounds(
+
+            mexicoLayer.getBounds(),
+
+            {
+
+                padding: [25, 25]
+
+            }
+
+        );
+
+    })
+
+    .catch(error => {
+
+        console.error(error);
+
+    });
+
+
+    /* =====================================================
+       ICONO PERSONALIZADO
+    ===================================================== */
+
+    function createProjectIcon() {
+
+    return L.divIcon({
+
+        className: "jjgole-factory-icon",
+
+        html: `
+            <div class="factory-marker">
+
+                <svg viewBox="0 0 64 64"
+                     xmlns="http://www.w3.org/2000/svg">
+
+                    <!-- Edificio -->
+                    <path
+                        d="M8 56V28L25 18V28L40 18V28L56 18V56Z"
+                        fill="#d46e0e"
+                    />
+
+                    <!-- Ventanas -->
+                    <rect x="15" y="35" width="7" height="7" fill="#ffffff"/>
+                    <rect x="29" y="35" width="7" height="7" fill="#ffffff"/>
+                    <rect x="43" y="35" width="7" height="7" fill="#ffffff"/>
+
+                    <!-- Puerta -->
+                    <rect x="27" y="45" width="10" height="11" fill="#ffffff"/>
+
+                    <!-- Chimenea -->
+                    <rect x="48" y="8" width="7" height="20" fill="#d46e0e"/>
+
+                </svg>
+
+            </div>
+        `,
+
+        iconSize: [12, 12],
+
+        iconAnchor: [4, 8],
+
+        popupAnchor: [0, -10]
+
+    });
+
+}
+
+    /* =====================================================
+       CREAR MARCADORES
+    ===================================================== */
+
+    const markers = {};
+
+
+    projects.forEach(project => {
+
+        const marker = L.marker(
+
+            [project.lat, project.lng],
+
+            {
+
+                icon: createProjectIcon(),
+
+                title: project.city
+
+            }
+
+        );
+
+
+        const popupHTML = `
+
+            <div class="jjgole-popup">
+
+                <span class="jjgole-popup-number">
+
+                    PROYECTO ${project.number}
+
+                </span>
+
+                <h3>
+                    ${project.city}
+                </h3>
+
+                <span class="popup-state">
+                    ${project.state}
+                </span>
+
+                <p>
+                    ${project.project}
+                </p>
+
+                <div class="popup-line">
+                    JJ GOLE S.A. DE C.V.
+                </div>
+
+            </div>
+
+        `;
+
+
+        marker.bindPopup(
+
+            popupHTML,
+
+            {
+
+                maxWidth: 300
+
+            }
+
+        );
+
+
+        marker.addTo(map);
+
+
+        markers[project.id] = marker;
+
+    });
+
+
+    /* =====================================================
+       CLICK EN LISTA
+    ===================================================== */
+
+    document
+        .querySelectorAll(".project-list-item")
+        .forEach(item => {
+
+            item.addEventListener("click", function () {
+
+                const projectID =
+                    this.dataset.project;
+
+
+                const project =
+                    projects.find(
+                        p => p.id === projectID
+                    );
+
+
+                if (!project) return;
+
+
+                /* Quitar active */
+
+                document
+                    .querySelectorAll(
+                        ".project-list-item"
+                    )
+                    .forEach(element => {
+
+                        element.classList.remove(
+                            "active"
+                        );
+
+                    });
+
+
+                /* Activar */
+
+                this.classList.add("active");
+
+
+                /* Mover mapa */
+
+                map.flyTo(
+
+                    [project.lat, project.lng],
+
+                    7,
+
+                    {
+
+                        duration: 1.2
+
+                    }
+
+                );
+
+
+                /* Abrir popup */
+
+                setTimeout(() => {
+
+                    markers[
+                        projectID
+                    ].openPopup();
+
+                }, 700);
+
+            });
+
+        });
+
+
+    /* =====================================================
+       AJUSTAR MAPA AL CAMBIAR TAMAÑO
+    ===================================================== */
+
+    window.addEventListener(
+        "resize",
+
+        function () {
+
+            map.invalidateSize();
+
+        }
+
+    );
+
+});
+
+</script>
+
 
 
 </body>
