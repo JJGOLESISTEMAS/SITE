@@ -13333,3 +13333,45 @@ width:100%;
     }
 
 }
+
+/* =====================================================
+   DESCRIPCIÓN - NUESTROS CLIENTES
+===================================================== */
+
+.clients-description {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 35px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.clients-description h4 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 400;
+    text-align: justify;
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .clients-description {
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 25px;
+    }
+
+    .clients-description h4 {
+        font-size: 15px;
+        line-height: 1.65;
+        text-align: justify;
+        margin: 0;
+    }
+
+}
