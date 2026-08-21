@@ -1726,6 +1726,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+        setTimeout(() => {
+            map.invalidateSize();
+        }, 500);
+
+
+    window.addEventListener("load", function(){
+            setTimeout(()=> {
+                map.invalidateSize();
+            }, 500)
+    });
+
+
+
 
     /* =====================================================
        PROYECTOS JJ GOLE
