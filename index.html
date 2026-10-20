@@ -866,7 +866,7 @@
 
                 <div class="projects-list-header">
 
-                    <span>7</span>
+                    <span>10</span>
 
                     <div>
                         <strong>Ubicaciones</strong>
@@ -965,8 +965,41 @@
                     </div>
 
                 </div>
-                
+              <div class="project-list-item"
+                     data-project="cuautitlan-izcalli">
 
+                    <span class="project-number">08</span>
+
+                    <div>
+                        <strong>Cuautitlán Izcalli</strong>
+                        <small>Estado de México</small>
+                    </div>
+
+                </div>
+
+                              <div class="project-list-item"
+                     data-project="tultitlan">
+
+                    <span class="project-number">09</span>
+
+                    <div>
+                        <strong>Tultitlan</strong>
+                        <small>Estado de México</small>
+                    </div>
+
+                </div>
+                <div class="project-list-item"
+                     data-project="ciudad-sahagun">
+
+                    <span class="project-number">10</span>
+
+                    <div>
+                        <strong>Ciudad Sahagun</strong>
+                        <small>Hidalgo</small>
+                    </div>
+
+                </div>
+                
 
                 </div>
             </div>
@@ -1013,14 +1046,22 @@
                                 </div>
                             </div>
 
+
                             <div class="grid partner-item">
-                                <img src="img/logs/sld1.png" class="partner-logo" alt="PEMEX">
+                                <img src="img/logs/sld8.png" class="partner-logo" alt="GERDAU CORSA">
 
                                 <div class="partner-overlay">
-                                    <h5>PEMEX LOGISTICA</h5>
+                                    <h5>GERDAU CORSA</h5>
                                 </div>
                             </div>
 
+                            <div class="grid partner-item">
+                                <img src="img/logs/VITROVA.jpg" class="partner-logo" alt="VITRO VIDRIOS AUTOMOTRIZ">
+
+                                <div class="partner-overlay">
+                                    <h5>VITRO VIDRIOS AUTOMOTRIZ</h5>
+                                </div>
+                            </div>
                             <div class="grid partner-item">
                                 <img src="img/logs/sld5.png" class="partner-logo" alt="AIR LIQUIDE">
 
@@ -1036,22 +1077,24 @@
                                     <h5>PEMEX REFINACIÓN</h5>
                                 </div>
                             </div>
-
                             <div class="grid partner-item">
+                                <img src="img/logs/sld1.png" class="partner-logo" alt="PEMEX">
+
+                                <div class="partner-overlay">
+                                    <h5>PEMEX LOGISTICA</h5>
+                                </div>
+                            </div>
+
+
+                       <!--      <div class="grid partner-item">
                                 <img src="img/logs/sld7.png" class="partner-logo" alt="CEMENTOS FORTALEZA">
 
                                 <div class="partner-overlay">
                                     <h5>CEMENTOS FORTALEZA</h5>
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="grid partner-item">
-                                <img src="img/logs/sld8.png" class="partner-logo" alt="GERDAU CORSA">
 
-                                <div class="partner-overlay">
-                                    <h5>GERDAU CORSA</h5>
-                                </div>
-                            </div>
 
                             <div class="grid partner-item">
                                 <img src="img/logs/sld2.png" class="partner-logo" alt="PEMEX">
@@ -1757,6 +1800,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             project: "Refinería de Tula de Allende - PEMEX REFINACION",
 
+
             lat: 20.0515,
 
             lng: -99.2675
@@ -1857,8 +1901,54 @@ document.addEventListener("DOMContentLoaded", function () {
             lat: 25.5908,
 
             lng: -100.0008
-        }
+        },
 
+           {
+            id: "cuautitlan-izcalli",
+
+            number: "08",
+
+            city: "Cuautitlán Izcalli ",
+
+            state: "Estado de México",
+
+            project: "VITRO, VIDRIOS AUTOMOTRIZ - VITRO, CUAUTITLÁN IZCALLI",
+
+            lat: 19.674468355663496,
+
+            lng: -99.19937080354202
+        },
+
+         {
+            id: "tultitlan",
+
+            number: "09",
+
+            city: "Tultitlan",
+
+            state: "Estado de México",
+
+            project: "GERDAU CORSA - GERDAU TULTITLAN",
+
+            lat:  19.632390496244795,
+
+            lng: -99.17898062050709
+        },
+         {
+            id: "ciudad-sahagun",
+
+            number: "10",
+
+            city: "Ciudad Sahagun",
+
+            state: "Hidalgo",
+
+            project: "GERDAU CORSA - GERDAU CIUDAD SAHAGUN",
+
+            lat:  19.753506599242723,
+
+            lng: -98.5954821258033
+        } 
 
     ];
 
@@ -1881,7 +1971,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         "Jalisco",
 
-        "Nuevo León"
+        "Nuevo León",
+
+        "México"
 
     ];
 
@@ -1889,6 +1981,17 @@ document.addEventListener("DOMContentLoaded", function () {
     /* =====================================================
        ESTILO DEL MAPA
     ===================================================== */
+/* NORMALIZAR NOMBRES DE ESTADOS */
+function normalizeStateName(name) {
+    return String(name)
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim()
+        .toUpperCase();
+}
+
+
+/* ESTILO DEL MAPA */
 
     function stateStyle(feature) {
 
