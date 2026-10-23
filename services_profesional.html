@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="JJ GOLE S.A. de C.V.">
+    <title>JJ GOLE S.A. DE C.V. | Trabajos Destacados</title>
+    <link rel="icon" href="img/Logotipo01FB.ico">
+
+    <!-- Hojas de estilo originales del sitio -->
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css" rel="stylesheet">
+    <link href="assets/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --jj-navy: #131e4a;
+            --jj-orange: #f58220;
+            --jj-orange-dark: #d96c0c;
+            --jj-text: #30343b;
+            --jj-muted: #687080;
+            --jj-bg: #f3f4f6;
+            --jj-border: #e2e5e9;
+        }
+
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--jj-text);
+            background: #fff;
+        }
+
+        /* Encabezado principal */
+        .site-header .navbar-brand img {
+            max-height: 66px;
+            width: auto;
+        }
+        .site-header .navigation {
+            background: #fff;
+        }
+        .site-header .nav > li > a {
+            font-weight: 700;
+        }
+        .site-header .nav > li > a:hover,
+        .site-header .nav > li.active > a {
+            color: var(--jj-orange);
+        }
+        .btn-denuncia {
+            color: #fff !important;
+            background: var(--jj-orange);
+            border-radius: 4px;
+            padding: 12px 15px !important;
+        }
+        .btn-denuncia:hover {
+            background: var(--jj-navy) !important;
+        }
+
+        /* Título de página */
+        .page-title {
+            background: var(--jj-navy);
+            position: relative;
+        }
+        .page-title h2 {
+            color: #fff;
+            font-weight: 800;
+            letter-spacing: .5px;
+        }
+
+        /* Sección de trabajos destacados */
+        .featured-services {
+            background: var(--jj-bg);
+            padding: 72px 0 86px;
+        }
+        .featured-heading {
+            max-width: 850px;
+            margin: 0 auto 42px;
+            text-align: center;
+        }
+        .featured-heading .eyebrow {
+            display: inline-block;
+            color: var(--jj-orange-dark);
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .featured-heading h2 {
+            color: var(--jj-navy);
+            font-size: 36px;
+            line-height: 1.2;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin: 0 0 16px;
+        }
+        .featured-heading p {
+            color: var(--jj-muted);
+            font-size: 16px;
+            line-height: 1.75;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .heading-rule {
+            display: block;
+            width: 70px;
+            height: 4px;
+            border-radius: 4px;
+            background: var(--jj-orange);
+            margin: 22px auto 0;
+        }
+
+        .service-grids {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 28px;
+            align-items: stretch;
+        }
+        .service-card {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background: #fff;
+            border: 1px solid var(--jj-border);
+            border-radius: 8px;
+            box-shadow: 0 5px 18px rgba(19, 30, 74, .07);
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 28px rgba(19, 30, 74, .14);
+        }
+        .service-image-button {
+            display: block;
+            width: 100%;
+            border: 0;
+            padding: 0;
+            background: #dfe3e8;
+            cursor: zoom-in;
+            overflow: hidden;
+        }
+        .service-image-button img {
+            display: block;
+            width: 100%;
+            height: 235px;
+            object-fit: cover;
+            transition: transform .4s ease;
+        }
+        .service-card:hover .service-image-button img {
+            transform: scale(1.035);
+        }
+        .service-card-content {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 23px 24px 25px;
+            border-top: 4px solid var(--jj-orange);
+        }
+        .service-number {
+            color: var(--jj-orange-dark);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.3px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .service-card h3 {
+            color: var(--jj-navy);
+            font-size: 19px;
+            line-height: 1.4;
+            font-weight: 800;
+            margin: 0 0 12px;
+        }
+        .service-card p {
+            color: var(--jj-muted);
+            font-size: 14px;
+            line-height: 1.65;
+            margin: 0 0 18px;
+        }
+        .service-link {
+            margin-top: auto;
+            color: var(--jj-orange-dark);
+            font-size: 13px;
+            font-weight: 800;
+            text-decoration: none;
+        }
+        .service-link:hover,
+        .service-link:focus {
+            color: var(--jj-navy);
+            text-decoration: none;
+        }
+        .service-link .arrow {
+            display: inline-block;
+            margin-left: 5px;
+            transition: transform .2s ease;
+        }
+        .service-link:hover .arrow { transform: translateX(4px); }
+
+        /* Visor de fotografías */
+        .photo-modal {
+            display: none;
+            position: fixed;
+            z-index: 99999;
+            inset: 0;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            background: rgba(8, 13, 29, .92);
+        }
+        .photo-modal.is-open { display: flex; }
+        .photo-modal-inner {
+            position: relative;
+            max-width: 1100px;
+            width: 100%;
+            max-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .photo-modal-image {
+            display: block;
+            max-width: 100%;
+            max-height: 82vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            box-shadow: 0 8px 35px rgba(0,0,0,.35);
+        }
+        .photo-modal-close,
+        .photo-modal-prev,
+        .photo-modal-next {
+            position: absolute;
+            z-index: 2;
+            border: 0;
+            color: #fff;
+            background: rgba(19, 30, 74, .85);
+            cursor: pointer;
+            line-height: 1;
+        }
+        .photo-modal-close {
+            top: -18px;
+            right: -8px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            font-size: 30px;
+        }
+        .photo-modal-prev,
+        .photo-modal-next {
+            top: 50%;
+            transform: translateY(-50%);
+            width: 46px;
+            height: 58px;
+            border-radius: 5px;
+            font-size: 28px;
+        }
+        .photo-modal-prev { left: 12px; }
+        .photo-modal-next { right: 12px; }
+        .photo-modal-close:hover,
+        .photo-modal-prev:hover,
+        .photo-modal-next:hover {
+            background: var(--jj-orange);
+        }
+        .photo-counter {
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        /* Pie de página */
+        .site-footer .lower-footer {
+            background: #10182f;
+        }
+        .site-footer .extra-link ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 8px 18px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .site-footer .extra-link li,
+        .site-footer .extra-link a {
+            color: #fff;
+            font-size: 12px;
+        }
+        .site-footer .extra-link a:hover { color: var(--jj-orange); }
+
+        @media (max-width: 991px) {
+            .service-grids { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+            .featured-heading h2 { font-size: 31px; }
+            .service-image-button img { height: 220px; }
+        }
+        @media (max-width: 575px) {
+            .featured-services { padding: 46px 0 55px; }
+            .featured-heading { margin-bottom: 30px; }
+            .featured-heading h2 { font-size: 26px; }
+            .featured-heading p { font-size: 14px; }
+            .service-grids { grid-template-columns: 1fr; gap: 20px; }
+            .service-image-button img { height: auto; aspect-ratio: 3 / 2; }
+            .service-card-content { padding: 20px; }
+            .photo-modal { padding: 15px; }
+            .photo-modal-prev { left: 4px; }
+            .photo-modal-next { right: 4px; }
+            .photo-modal-close { top: -15px; right: -5px; }
+            .site-footer .extra-link ul { flex-direction: column; gap: 8px; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                scroll-behavior: auto !important;
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="page-wrapper">
+
+    <!-- Encabezado -->
+    <header id="header" class="site-header header-style-1">
+        <nav class="navigation navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="open-btn" aria-label="Abrir menú">
+                        <span class="sr-only">Abrir menú</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/Logotipo jj g 1.png" alt="JJ GOLE S.A. de C.V.">
+                    </a>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse navigation-holder">
+                    <button class="close-navbar" aria-label="Cerrar menú">
+                        <i class="ti-close"></i>
+                    </button>
+                    <ul class="nav navbar-nav">
+                        <li class="menu-item-has-children">
+                            <a href="index.html">Inicio</a>
+                            <ul class="sub-menu">
+                                <li><a href="mision.html">Misión y Visión</a></li>
+                                <li><a href="portfolio.html">Políticas de la Empresa</a></li>
+                                <li><a href="instals.html">Instalaciones</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">Nosotros</a></li>
+                        <li><a href="services2.html">Servicios</a></li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Proyectos</a>
+                            <ul class="sub-menu">
+                                <li><a href="Project_Execut.html">Proyectos Ejecutados</a></li>
+                                <li><a href="services_jjgole.html">Proyectos Destacados</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Certificados.html">Certificaciones</a></li>
+                        <li><a href="dowloads.html">Descargables</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="line-D.html" class="btn-denuncia">Línea de Denuncia</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Título de página -->
+    <section class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xs-12">
+                    <h2>Trabajos Destacados</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de servicios -->
+    <main>
+        <section class="featured-services">
+            <div class="container">
+                <header class="featured-heading">
+                    <span class="eyebrow">Nuestras soluciones para la industria</span>
+                    <h2>Experiencia que impulsa a la industria</h2>
+                    <p>
+                        En JJ GOLE desarrollamos soluciones para proyectos industriales,
+                        combinando experiencia técnica, fabricación, montaje y mantenimiento.
+                    </p>
+                    <span class="heading-rule" aria-hidden="true"></span>
+                </header>
+
+                <div class="service-grids" id="serviceGallery">
+
+                    <article class="service-card">
+                        <button class="service-image-button" type="button" data-gallery-index="0" aria-label="Ampliar fotografía de recubrimientos anticorrosivos">
+                            <img src="assets/images/services/jjgole1.png" alt="Trabajos de recubrimientos anticorrosivos">
+                        </button>
+                        <div class="service-card-content">
+                            <span class="service-number">01 · Protección industrial</span>
+                            <h3>Recubrimientos Anticorrosivos</h3>
+                            <p>Protección de superficies y estructuras metálicas para contribuir a su conservación en ambientes industriales.</p>
+                            <a class="service-link" href="services2.html">Conocer servicio <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <button class="service-image-button" type="button" data-gallery-index="1" aria-label="Ampliar fotografía de aislamiento térmico">
+                            <img src="assets/images/services/jjgole2.png" alt="Trabajos de aislamiento térmico industrial">
+                        </button>
+                        <div class="service-card-content">
+                            <span class="service-number">02 · Eficiencia térmica</span>
+                            <h3>Aislamiento Térmico</h3>
+                            <p>Soluciones de aislamiento para equipos, instalaciones y líneas de proceso industrial.</p>
+                            <a class="service-link" href="Prueba_Model1.html">Conocer servicio <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <button class="service-image-button" type="button" data-gallery-index="2" aria-label="Ampliar fotografía de concretos refractarios">
+                            <img src="assets/images/services/jjgole3.png" alt="Aplicación de concretos refractarios">
+                        </button>
+                        <div class="service-card-content">
+                            <span class="service-number">03 · Alta temperatura</span>
+                            <h3>Concretos Refractarios</h3>
+                            <p>Aplicaciones refractarias para equipos y procesos que operan a temperaturas elevadas.</p>
+                            <a class="service-link" href="services2.html">Conocer servicio <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <button class="service-image-button" type="button" data-gallery-index="3" aria-label="Ampliar fotografía de protección contra fuego">
+                            <img src="assets/images/services/jjgole4.png" alt="Sistema de protección contra fuego">
+                        </button>
+                        <div class="service-card-content">
+                            <span class="service-number">04 · Seguridad industrial</span>
+                            <h3>Protección Contra Fuego</h3>
+                            <p>Soluciones de protección pasiva contra fuego para instalaciones y elementos industriales.</p>
+                            <a class="service-link" href="services2.html">Conocer servicio <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <button class="service-image-button" type="button" data-gallery-index="4" aria-label="Ampliar fotografía de aire acondicionado y presurización">
+                            <img src="assets/images/services/jjgole5.png" alt="Instalaciones de aire acondicionado y presurización">
+                        </button>
+                        <div class="service-card-content">
+                            <span class="service-number">05 · Climatización</span>
+                            <h3>Aire Acondicionado y Sistemas de Presurización</h3>
+                            <p>Instalación de soluciones de climatización y presurización para espacios y procesos.</p>
+                            <a class="service-link" href="services2.html">Conocer servicio <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <button class="service-image-button" type="button" data-gallery-index="5" aria-label="Ampliar fotografía de fabricación de estructuras">
+                            <img src="assets/images/services/jjgole6.png" alt="Fabricación de estructuras metálicas">
+                        </button>
+                        <div class="service-card-content">
+                            <span class="service-number">06 · Fabricación</span>
+                            <h3>Fabricación de Estructuras</h3>
+                            <p>Fabricación y montaje de estructuras metálicas para proyectos industriales.</p>
+                            <a class="service-link" href="Project_Execut.html">Conocer proyectos <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <button class="service-image-button" type="button" data-gallery-index="6" aria-label="Ampliar fotografía de fabricación de líneas y tubería">
+                            <img src="assets/images/services/jjgole7.png" alt="Fabricación de líneas y tubería">
+                        </button>
+                        <div class="service-card-content">
+                            <span class="service-number">07 · Tuberías industriales</span>
+                            <h3>Fabricación de Líneas y Tubería</h3>
+                            <p>Fabricación y preparación de líneas de tubería para aplicaciones industriales.</p>
+                            <a class="service-link" href="Project_Execut.html">Conocer proyectos <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <button class="service-image-button" type="button" data-gallery-index="7" aria-label="Ampliar fotografía de mantenimiento a intercambiadores de calor">
+                            <img src="assets/images/services/jjgole8.png" alt="Mantenimiento a intercambiadores de calor">
+                        </button>
+                        <div class="service-card-content">
+                            <span class="service-number">08 · Mantenimiento</span>
+                            <h3>Mantenimiento a Intercambiadores de Calor</h3>
+                            <p>Trabajos de mantenimiento para equipos de intercambio térmico industrial.</p>
+                            <a class="service-link" href="Project_Execut.html">Conocer proyectos <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <button class="service-image-button" type="button" data-gallery-index="8" aria-label="Ampliar fotografía de rehabilitación de torres y recipientes">
+                            <img src="assets/images/services/jjgole9.png" alt="Rehabilitación de torres y recipientes">
+                        </button>
+                        <div class="service-card-content">
+                            <span class="service-number">09 · Rehabilitación</span>
+                            <h3>Rehabilitación de Torres y Recipientes</h3>
+                            <p>Intervenciones de rehabilitación y mantenimiento de equipos industriales.</p>
+                            <a class="service-link" href="Project_Execut.html">Conocer proyectos <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <button class="service-image-button" type="button" data-gallery-index="9" aria-label="Ampliar fotografía de mantenimiento a calentadores">
+                            <img src="assets/images/services/jjgole10.png" alt="Mantenimiento a calentadores de fuego directo">
+                        </button>
+                        <div class="service-card-content">
+                            <span class="service-number">10 · Equipos industriales</span>
+                            <h3>Mantenimiento a Calentadores de Fuego Directo</h3>
+                            <p>Actividades de mantenimiento para calentadores de fuego directo en instalaciones industriales.</p>
+                            <a class="service-link" href="Project_Execut.html">Conocer proyectos <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Visor de fotografías -->
+    <div class="photo-modal" id="photoModal" role="dialog" aria-modal="true" aria-label="Visor de fotografías">
+        <div class="photo-modal-inner">
+            <button class="photo-modal-close" id="modalClose" type="button" aria-label="Cerrar visor">&times;</button>
+            <button class="photo-modal-prev" id="modalPrev" type="button" aria-label="Fotografía anterior">&#10094;</button>
+            <img class="photo-modal-image" id="modalImage" src="" alt="">
+            <button class="photo-modal-next" id="modalNext" type="button" aria-label="Fotografía siguiente">&#10095;</button>
+            <div class="photo-counter" id="photoCounter"></div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="site-footer">
+        <div class="upper-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-3 col-md-3 col-sm-6">
+                        <div class="widget about-widget">
+                            <div class="logo widget-title">
+                                <img src="img/LOGO/LOGS3.png" alt="Logotipo JJ GOLE" class="img-rounded">
+                            </div>
+                            <div class="social-icons">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100090913023225" aria-label="Facebook de JJ GOLE"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/?lang=es" aria-label="Twitter"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="https://mx.linkedin.com/" aria-label="LinkedIn"><i class="ti-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-lg-3 col-md-3 col-sm-6">
+                        <div class="widget contact-widget service-link-widget">
+                            <div class="widget-title"><h3>Dirección Oficinas</h3></div>
+                            <ul>
+                                <li><b>Cadereyta, Nuevo León</b></li>
+                                <li>Calle Zaragoza No. 608-A PTE, Zona Centro, C.P. 67480, Cadereyta Jiménez, Nuevo León.</li>
+                                <li><span>Teléfono:</span> 828-284-32-00</li>
+                                <li><span>Email:</span> <a href="mailto:cadereyta@jjgole.com">cadereyta@jjgole.com</a></li>
+                                <li><span>Horario:</span> Lunes a viernes, 08:00 a 18:00 h. Sábado, 08:00 a 13:00 h.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col col-lg-3 col-md-3 col-sm-6">
+                        <div class="widget contact-widget service-link-widget">
+                            <div class="widget-title"><h3>Dirección Taller</h3></div>
+                            <ul>
+                                <li><b>Atitalaquia, Hidalgo</b></li>
+                                <li>Primera Cerrada de Camino Real a Bojay S/N, Col. La Loma, C.P. 42970, Atitalaquia, Hidalgo.</li>
+                                <li><span>Teléfono:</span> 778-738-02-27</li>
+                                <li><span>Email:</span> <a href="mailto:cadereyta@jjgole.com">cadereyta@jjgole.com</a></li>
+                                <li><span>Horario:</span> Lunes a viernes, 08:00 a 18:00 h. Sábado, 08:00 a 13:00 h.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col col-lg-3 col-md-3 col-sm-6">
+                        <div class="widget newsletter-widget">
+                            <div class="widget-title"><h3>Boletín Informativo</h3></div>
+                            <p>Se le notificará cuando aparezca algo nuevo.</p>
+                            <form action="#" method="post">
+                                <div class="input-1">
+                                    <input type="email" class="form-control" placeholder="Correo electrónico *" aria-label="Correo electrónico" required>
+                                </div>
+                                <div class="submit clearfix">
+                                    <button type="submit" aria-label="Enviar correo"><i class="ti-email"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lower-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="separator"></div>
+                    <div class="col col-xs-12 col-md-12">
+                        <div class="extra-link center-block">
+                            <ul>
+                                <li>| JJ GOLE S.A. de C.V. - Copyright &copy; <span id="year"></span> |</li>
+                                <li><a href="aviso_priv.html">| Aviso de Privacidad |</a></li>
+                                <li>| Derechos reservados, JJ GOLE S.A. de C.V. |</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Scripts del sitio -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-plugin-collection.js"></script>
+<script src="assets/js/script.js"></script>
+
+<script>
+(function () {
+    "use strict";
+
+    // Año automático en el pie de página
+    var yearElement = document.getElementById("year");
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+
+    // Visor de imágenes: usa las fotografías reales de las tarjetas
+    var galleryButtons = Array.prototype.slice.call(
+        document.querySelectorAll("[data-gallery-index]")
+    );
+    var modal = document.getElementById("photoModal");
+    var modalImage = document.getElementById("modalImage");
+    var counter = document.getElementById("photoCounter");
+    var closeButton = document.getElementById("modalClose");
+    var previousButton = document.getElementById("modalPrev");
+    var nextButton = document.getElementById("modalNext");
+    var currentIndex = 0;
+
+    function showImage(index) {
+        if (!galleryButtons.length) return;
+        currentIndex = (index + galleryButtons.length) % galleryButtons.length;
+
+        var image = galleryButtons[currentIndex].querySelector("img");
+        modalImage.src = image.src;
+        modalImage.alt = image.alt;
+        counter.textContent = (currentIndex + 1) + " de " + galleryButtons.length;
+    }
+
+    function openModal(index) {
+        showImage(index);
+        modal.classList.add("is-open");
+        document.body.style.overflow = "hidden";
+        closeButton.focus();
+    }
+
+    function closeModal() {
+        modal.classList.remove("is-open");
+        document.body.style.overflow = "";
+    }
+
+    galleryButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            openModal(Number(button.getAttribute("data-gallery-index")));
+        });
+    });
+
+    closeButton.addEventListener("click", closeModal);
+    previousButton.addEventListener("click", function () {
+        showImage(currentIndex - 1);
+    });
+    nextButton.addEventListener("click", function () {
+        showImage(currentIndex + 1);
+    });
+
+    modal.addEventListener("click", function (event) {
+        if (event.target === modal) closeModal();
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (!modal.classList.contains("is-open")) return;
+        if (event.key === "Escape") closeModal();
+        if (event.key === "ArrowLeft") showImage(currentIndex - 1);
+        if (event.key === "ArrowRight") showImage(currentIndex + 1);
+    });
+})();
+</script>
+</body>
+</html>
